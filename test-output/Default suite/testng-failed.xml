@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="skillbox.EventBookTest.AddOnEventBookTest">
+      <class name="skillbox.PunchSalesTest.PunchSalesTest">
         <methods>
           <include name="acConfig"/>
           <include name="bsConfig"/>
+          <include name="punchsale"/>
           <include name="bmConfig"/>
           <include name="bcConfig"/>
-          <include name="freeticketbook"/>
           <include name="amConfig"/>
           <include name="asConfig"/>
         </methods>
-      </class> <!-- skillbox.EventBookTest.AddOnEventBookTest -->
+      </class> <!-- skillbox.PunchSalesTest.PunchSalesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

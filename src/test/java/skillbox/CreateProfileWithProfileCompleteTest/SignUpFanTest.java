@@ -21,7 +21,7 @@ public class SignUpFanTest extends BaseClass {
 	    ProfileSettingPage psp = new ProfileSettingPage(driver);
 	    psp.profileCompleteFan(driver, "fn Cort", "India", "Allahabad", "Biking");
         
-		
+		//Success
         String succesmsg = psp.getSuccesmsg().getText();
 		Assert.assertTrue(succesmsg.contains("successfully"));
 		System.out.println(succesmsg);
