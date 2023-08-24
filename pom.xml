@@ -43,7 +43,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.8.0</version>
-    <scope>test</scope>
+   <!-- <scope>test</scope>--> 
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -81,12 +81,13 @@
             <configuration>
                 <source>1.8</source>
                 <target>1.8</target>
-                <!-- Additional configuration options can be added here -->
             </configuration>
         </plugin>
-    </plugins>
+      </plugins>
 </build>
   
-  
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>  
   
 </project>
