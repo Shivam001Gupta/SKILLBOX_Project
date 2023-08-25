@@ -47,16 +47,19 @@ public class BaseClass {
 		String URL = pUtil.getDataFromPropertyFile("url");
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			System.out.println(BROWSER + " === Browser launched ===");
 
 		} else if (BROWSER.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver", ".\\src\\main\\resources\\geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			System.out.println(BROWSER + " === Browser launched ===");
 			
 		} else if (BROWSER.equalsIgnoreCase("IE")) {
+			System.setProperty("webdriver.chrome.driver", ".src\\main\\resources\\chromedriver.exe");
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			System.out.println(BROWSER + " === Browser launched ===");
