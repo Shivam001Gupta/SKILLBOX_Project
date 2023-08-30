@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5"  name="Suite">
+  
+  <test thread-count="5"  name="Test-Runner-chrome">
+	  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="skillbox.PunchSalesTest.PunchSalesTest"/> 
+      <class name="skillbox.CreateDiyTest.CreateDiyTest"/>   
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest"/>
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest"/>
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest"/>
+      <class name="skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest"/>
+      <class name="skillbox.EventBookTest.AddOnEventBookTest"/>
+      <class name="skillbox.EventBookTest.FreeEventBookTest"/>
+      <class name="skillbox.EventBookTest.PaidEventBookTest"/>
+      <class name="skillbox.FeedsTest.FeedsTest"/>
+          
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5"  name="Test-Runner-firefox">
+	  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="skillbox.PunchSalesTest.PunchSalesTest"/> 
+      <class name="skillbox.CreateDiyTest.CreateDiyTest"/>   
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest"/>
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest"/>
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest"/>
+      <class name="skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest"/>
+      <class name="skillbox.EventBookTest.AddOnEventBookTest"/>
+      <class name="skillbox.EventBookTest.FreeEventBookTest"/>
+      <class name="skillbox.EventBookTest.PaidEventBookTest"/>
+      <class name="skillbox.FeedsTest.FeedsTest"/>
+          
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5"  name="Test-Runner-IE">
+	  <parameter name="browser" value="IE"></parameter>
+    <classes>
+      <class name="skillbox.PunchSalesTest.PunchSalesTest"/> 
+      <class name="skillbox.CreateDiyTest.CreateDiyTest"/>   
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest"/>
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest"/>
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest"/>
+      <class name="skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest"/>
+      <class name="skillbox.EventBookTest.AddOnEventBookTest"/>
+      <class name="skillbox.EventBookTest.FreeEventBookTest"/>
+      <class name="skillbox.EventBookTest.PaidEventBookTest"/>
+      <class name="skillbox.FeedsTest.FeedsTest"/>
+          
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->

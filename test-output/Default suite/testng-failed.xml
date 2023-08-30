@@ -6,12 +6,12 @@
       <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest">
         <methods>
           <include name="acConfig"/>
-          <include name="bsConfig"/>
           <include name="signupf"/>
-          <include name="bmConfig"/>
+          <include name="bsConfig"/>
           <include name="bcConfig"/>
-          <include name="amConfig"/>
+          <include name="bmConfig"/>
           <include name="asConfig"/>
+          <include name="amConfig"/>
         </methods>
       </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest -->
     </classes>

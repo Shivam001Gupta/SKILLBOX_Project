@@ -16,6 +16,8 @@
 
 
 
+
+
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
@@ -89,5 +91,34 @@
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>  
+
+
+
+
+
+
+
+
+
+<!-- This is used to run cross browser execution (mvn test -P crosssbrowser), parameter tag, browser parameter-->
+<!-- <profiles>
+	<profile>
+<id>crossbrowser</id>
+<build>
+<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.1.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng-CrossBrowserExecution.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+</build>  
+</profile> 
+</profiles>  -->
   
 </project>

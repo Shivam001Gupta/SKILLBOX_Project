@@ -12,6 +12,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -38,28 +40,25 @@ public class BaseClass {
 	{
 		System.out.println("====== db connection successful ======");
 	}
-	
-	@BeforeClass
-	public void bcConfig() throws Throwable
+//	@Parameters("browser")
+	@BeforeClass(alwaysRun = true)
+	public void bcConfig(/*String BROWSER*/) throws Throwable
 	{
 		//Read browser name and URL from property File
 		String BROWSER = pUtil.getDataFromPropertyFile("browser");
 		String URL = pUtil.getDataFromPropertyFile("url");
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			System.out.println(BROWSER + " === Browser launched ===");
 
 		} else if (BROWSER.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", ".\\src\\main\\resources\\geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			System.out.println(BROWSER + " === Browser launched ===");
 			
 		} else if (BROWSER.equalsIgnoreCase("IE")) {
-			System.setProperty("webdriver.chrome.driver", ".src\\main\\resources\\chromedriver.exe");
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			System.out.println(BROWSER + " === Browser launched ===");
@@ -86,7 +85,7 @@ public class BaseClass {
 	}
 	
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void bmConfig() throws Throwable
 	{
 		System.out.println("=== Operation Started Successful ====");
@@ -94,22 +93,22 @@ public class BaseClass {
 	}
 
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void amConfig() throws Throwable
 	{
 		System.out.println("=== Operation Completed Successful ====");
 	}
 		
-	
-	@AfterClass
+//	@BeforeTest
+	@AfterClass(alwaysRun = true)
 	public void acConfig()
 	{
-//		driver.quit();
+		driver.quit();
 		System.out.println(" ========== Browser Closed ========");
 	}
 		
 	
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void asConfig()
 	{
 		System.out.println("====== db connection closed ======");

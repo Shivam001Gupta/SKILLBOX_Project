@@ -1,0 +1,1 @@
+{"uuid":"07f9fa12-0d70-4bc9-b468-b25345c18b77","name":"skillbox.PunchSalesTest.PunchSalesTest","children":["e6503e76-44d8-43f3-9915-285caef64ed6"],"befores":[],"afters":[{"name":"acConfig","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1693294267888,"stop":1693294267888}],"start":1693294267480,"stop":1693294267928}

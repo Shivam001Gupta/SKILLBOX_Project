@@ -1,45 +1,516 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="42" passed="37" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-25T16:38:26 IST" name="Default suite" finished-at="2023-08-25T16:39:04 IST" duration-ms="38492">
+  <suite started-at="2023-08-29T15:56:39 IST" name="Suite" finished-at="2023-08-29T16:22:50 IST" duration-ms="1570476">
     <groups>
     </groups>
-    <test started-at="2023-08-25T16:38:26 IST" name="Default test" finished-at="2023-08-25T16:39:04 IST" duration-ms="38492">
-      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@13d73f29]" started-at="2023-08-25T16:38:26 IST" name="bsConfig" finished-at="2023-08-25T16:38:26 IST" duration-ms="25" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@13d73f29]" started-at="2023-08-25T16:38:26 IST" name="bcConfig" finished-at="2023-08-25T16:38:37 IST" duration-ms="11669" status="PASS">
+    <test started-at="2023-08-29T15:56:39 IST" name="Test-Runner-chrome" finished-at="2023-08-29T16:05:49 IST" duration-ms="549951">
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@41f69e84]" started-at="2023-08-29T15:58:48 IST" name="bcConfig" finished-at="2023-08-29T15:59:36 IST" duration-ms="47343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@13d73f29]" started-at="2023-08-25T16:38:38 IST" name="bmConfig" finished-at="2023-08-25T16:38:38 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@41f69e84]" started-at="2023-08-29T15:59:36 IST" name="bmConfig" finished-at="2023-08-29T15:59:36 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="signupf()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@13d73f29]" started-at="2023-08-25T16:38:38 IST" name="signupf" finished-at="2023-08-25T16:39:04 IST" duration-ms="26524" status="FAIL">
+        <test-method signature="signua()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@41f69e84]" started-at="2023-08-29T15:59:36 IST" name="signua" finished-at="2023-08-29T16:00:14 IST" duration-ms="38866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signua -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@41f69e84]" started-at="2023-08-29T16:00:14 IST" name="amConfig" finished-at="2023-08-29T16:00:14 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@41f69e84]" started-at="2023-08-29T16:00:14 IST" name="acConfig" finished-at="2023-08-29T16:00:15 IST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest -->
+      <class name="skillbox.EventBookTest.FreeEventBookTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@64b0598]" started-at="2023-08-29T16:02:53 IST" name="bcConfig" finished-at="2023-08-29T16:02:57 IST" duration-ms="4699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@64b0598]" started-at="2023-08-29T16:02:57 IST" name="bmConfig" finished-at="2023-08-29T16:02:57 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="freeticketbook()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@64b0598]" started-at="2023-08-29T16:02:57 IST" name="freeticketbook" finished-at="2023-08-29T16:03:22 IST" duration-ms="24384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeticketbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@64b0598]" started-at="2023-08-29T16:03:22 IST" name="amConfig" finished-at="2023-08-29T16:03:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@64b0598]" started-at="2023-08-29T16:03:22 IST" name="acConfig" finished-at="2023-08-29T16:03:22 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.EventBookTest.FreeEventBookTest -->
+      <class name="skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@24105dc5]" started-at="2023-08-29T16:01:32 IST" name="bcConfig" finished-at="2023-08-29T16:01:42 IST" duration-ms="9619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@24105dc5]" started-at="2023-08-29T16:01:42 IST" name="bmConfig" finished-at="2023-08-29T16:01:42 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createpromoter()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@24105dc5]" started-at="2023-08-29T16:01:42 IST" name="createpromoter" finished-at="2023-08-29T16:02:03 IST" duration-ms="20898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createpromoter -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@24105dc5]" started-at="2023-08-29T16:02:03 IST" name="amConfig" finished-at="2023-08-29T16:02:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@24105dc5]" started-at="2023-08-29T16:02:03 IST" name="acConfig" finished-at="2023-08-29T16:02:04 IST" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest -->
+      <class name="skillbox.EventBookTest.AddOnEventBookTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@5167f57d]" started-at="2023-08-29T16:02:04 IST" name="bcConfig" finished-at="2023-08-29T16:02:09 IST" duration-ms="4483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@5167f57d]" started-at="2023-08-29T16:02:09 IST" name="bmConfig" finished-at="2023-08-29T16:02:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="freeticketbook()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@5167f57d]" started-at="2023-08-29T16:02:09 IST" name="freeticketbook" finished-at="2023-08-29T16:02:52 IST" duration-ms="43529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeticketbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@5167f57d]" started-at="2023-08-29T16:02:52 IST" name="amConfig" finished-at="2023-08-29T16:02:52 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@5167f57d]" started-at="2023-08-29T16:02:52 IST" name="acConfig" finished-at="2023-08-29T16:02:53 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.EventBookTest.AddOnEventBookTest -->
+      <class name="skillbox.FeedsTest.FeedsTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:04:27 IST" name="bcConfig" finished-at="2023-08-29T16:04:31 IST" duration-ms="4413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:04:31 IST" name="bmConfig" finished-at="2023-08-29T16:04:31 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="text()[pri:1, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:04:31 IST" name="text" finished-at="2023-08-29T16:04:40 IST" duration-ms="9383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- text -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:04:40 IST" name="amConfig" finished-at="2023-08-29T16:04:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:04:40 IST" name="bmConfig" finished-at="2023-08-29T16:04:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="like()[pri:2, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:04:40 IST" name="like" finished-at="2023-08-29T16:04:43 IST" duration-ms="2459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- like -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:04:43 IST" name="amConfig" finished-at="2023-08-29T16:04:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:04:43 IST" name="bmConfig" finished-at="2023-08-29T16:04:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="audio()[pri:3, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:04:43 IST" name="audio" finished-at="2023-08-29T16:05:09 IST" duration-ms="25865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- audio -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:05:09 IST" name="amConfig" finished-at="2023-08-29T16:05:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:05:09 IST" name="bmConfig" finished-at="2023-08-29T16:05:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="video()[pri:4, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:05:09 IST" name="video" finished-at="2023-08-29T16:05:35 IST" duration-ms="25929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- video -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:05:35 IST" name="amConfig" finished-at="2023-08-29T16:05:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:05:35 IST" name="bmConfig" finished-at="2023-08-29T16:05:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="image()[pri:5, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:05:35 IST" name="image" finished-at="2023-08-29T16:05:49 IST" duration-ms="14071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- image -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:05:49 IST" name="amConfig" finished-at="2023-08-29T16:05:49 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@3e2055d6]" started-at="2023-08-29T16:05:49 IST" name="acConfig" finished-at="2023-08-29T16:05:49 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.FeedsTest.FeedsTest -->
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@7975d1d8]" started-at="2023-08-29T16:00:15 IST" name="bcConfig" finished-at="2023-08-29T16:00:20 IST" duration-ms="5261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@7975d1d8]" started-at="2023-08-29T16:00:20 IST" name="bmConfig" finished-at="2023-08-29T16:00:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="signupb()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@7975d1d8]" started-at="2023-08-29T16:00:20 IST" name="signupb" finished-at="2023-08-29T16:00:55 IST" duration-ms="35258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupb -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@7975d1d8]" started-at="2023-08-29T16:00:55 IST" name="amConfig" finished-at="2023-08-29T16:00:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@7975d1d8]" started-at="2023-08-29T16:00:55 IST" name="acConfig" finished-at="2023-08-29T16:00:56 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest -->
+      <class name="skillbox.PunchSalesTest.PunchSalesTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@24959ca4]" started-at="2023-08-29T15:56:39 IST" name="bcConfig" finished-at="2023-08-29T15:56:46 IST" duration-ms="7060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@24959ca4]" started-at="2023-08-29T15:56:46 IST" name="bmConfig" finished-at="2023-08-29T15:56:46 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="punchsale()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@24959ca4]" started-at="2023-08-29T15:56:47 IST" name="punchsale" finished-at="2023-08-29T15:57:21 IST" duration-ms="34325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- punchsale -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@24959ca4]" started-at="2023-08-29T15:57:21 IST" name="amConfig" finished-at="2023-08-29T15:57:21 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@24959ca4]" started-at="2023-08-29T15:57:21 IST" name="acConfig" finished-at="2023-08-29T15:57:21 IST" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.PunchSalesTest.PunchSalesTest -->
+      <class name="skillbox.CreateDiyTest.CreateDiyTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@769a1df5]" started-at="2023-08-29T15:57:21 IST" name="bcConfig" finished-at="2023-08-29T15:57:27 IST" duration-ms="5921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@769a1df5]" started-at="2023-08-29T15:57:27 IST" name="bmConfig" finished-at="2023-08-29T15:57:27 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="creatediy()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@769a1df5]" started-at="2023-08-29T15:57:27 IST" name="creatediy" finished-at="2023-08-29T15:58:48 IST" duration-ms="80470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatediy -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@769a1df5]" started-at="2023-08-29T15:58:48 IST" name="amConfig" finished-at="2023-08-29T15:58:48 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@769a1df5]" started-at="2023-08-29T15:58:48 IST" name="acConfig" finished-at="2023-08-29T15:58:48 IST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateDiyTest.CreateDiyTest -->
+      <class name="skillbox.EventBookTest.PaidEventBookTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@18f8cd79]" started-at="2023-08-29T16:03:22 IST" name="bcConfig" finished-at="2023-08-29T16:03:26 IST" duration-ms="4083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@18f8cd79]" started-at="2023-08-29T16:03:26 IST" name="bmConfig" finished-at="2023-08-29T16:03:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="eventbook()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@18f8cd79]" started-at="2023-08-29T16:03:26 IST" name="eventbook" finished-at="2023-08-29T16:04:26 IST" duration-ms="60136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@18f8cd79]" started-at="2023-08-29T16:04:26 IST" name="amConfig" finished-at="2023-08-29T16:04:26 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@18f8cd79]" started-at="2023-08-29T16:04:26 IST" name="acConfig" finished-at="2023-08-29T16:04:27 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.EventBookTest.PaidEventBookTest -->
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@2438dcd]" started-at="2023-08-29T16:00:56 IST" name="bcConfig" finished-at="2023-08-29T16:01:01 IST" duration-ms="4816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@2438dcd]" started-at="2023-08-29T16:01:01 IST" name="bmConfig" finished-at="2023-08-29T16:01:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="signupf()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@2438dcd]" started-at="2023-08-29T16:01:01 IST" name="signupf" finished-at="2023-08-29T16:01:32 IST" duration-ms="31410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupf -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@2438dcd]" started-at="2023-08-29T16:01:32 IST" name="amConfig" finished-at="2023-08-29T16:01:32 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@2438dcd]" started-at="2023-08-29T16:01:32 IST" name="acConfig" finished-at="2023-08-29T16:01:32 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest -->
+    </test> <!-- Test-Runner-chrome -->
+    <test started-at="2023-08-29T16:05:49 IST" name="Test-Runner-firefox" finished-at="2023-08-29T16:13:43 IST" duration-ms="474086">
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@264f218]" started-at="2023-08-29T16:07:39 IST" name="bcConfig" finished-at="2023-08-29T16:07:47 IST" duration-ms="7440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@264f218]" started-at="2023-08-29T16:07:47 IST" name="bmConfig" finished-at="2023-08-29T16:07:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="signua()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@264f218]" started-at="2023-08-29T16:07:47 IST" name="signua" finished-at="2023-08-29T16:08:25 IST" duration-ms="38493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signua -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@264f218]" started-at="2023-08-29T16:08:25 IST" name="amConfig" finished-at="2023-08-29T16:08:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@264f218]" started-at="2023-08-29T16:08:25 IST" name="acConfig" finished-at="2023-08-29T16:08:29 IST" duration-ms="3805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest -->
+      <class name="skillbox.EventBookTest.FreeEventBookTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@81d9a72]" started-at="2023-08-29T16:11:36 IST" name="bcConfig" finished-at="2023-08-29T16:11:44 IST" duration-ms="7893" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@81d9a72]" started-at="2023-08-29T16:11:44 IST" name="bmConfig" finished-at="2023-08-29T16:11:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="freeticketbook()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@81d9a72]" started-at="2023-08-29T16:11:44 IST" name="freeticketbook" finished-at="2023-08-29T16:12:11 IST" duration-ms="26660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeticketbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@81d9a72]" started-at="2023-08-29T16:12:11 IST" name="amConfig" finished-at="2023-08-29T16:12:11 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@81d9a72]" started-at="2023-08-29T16:12:11 IST" name="acConfig" finished-at="2023-08-29T16:12:13 IST" duration-ms="2510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.EventBookTest.FreeEventBookTest -->
+      <class name="skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@2e570ded]" started-at="2023-08-29T16:10:08 IST" name="bcConfig" finished-at="2023-08-29T16:10:16 IST" duration-ms="8603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@2e570ded]" started-at="2023-08-29T16:10:16 IST" name="bmConfig" finished-at="2023-08-29T16:10:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createpromoter()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@2e570ded]" started-at="2023-08-29T16:10:16 IST" name="createpromoter" finished-at="2023-08-29T16:10:38 IST" duration-ms="21457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createpromoter -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@2e570ded]" started-at="2023-08-29T16:10:38 IST" name="amConfig" finished-at="2023-08-29T16:10:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@2e570ded]" started-at="2023-08-29T16:10:38 IST" name="acConfig" finished-at="2023-08-29T16:10:39 IST" duration-ms="1579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest -->
+      <class name="skillbox.EventBookTest.AddOnEventBookTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@b86de0d]" started-at="2023-08-29T16:10:39 IST" name="bcConfig" finished-at="2023-08-29T16:10:47 IST" duration-ms="7661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@b86de0d]" started-at="2023-08-29T16:10:47 IST" name="bmConfig" finished-at="2023-08-29T16:10:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="freeticketbook()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@b86de0d]" started-at="2023-08-29T16:10:47 IST" name="freeticketbook" finished-at="2023-08-29T16:11:33 IST" duration-ms="46156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeticketbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@b86de0d]" started-at="2023-08-29T16:11:33 IST" name="amConfig" finished-at="2023-08-29T16:11:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@b86de0d]" started-at="2023-08-29T16:11:33 IST" name="acConfig" finished-at="2023-08-29T16:11:36 IST" duration-ms="3055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.EventBookTest.AddOnEventBookTest -->
+      <class name="skillbox.FeedsTest.FeedsTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:12:45 IST" name="bcConfig" finished-at="2023-08-29T16:12:53 IST" duration-ms="7570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:12:53 IST" name="bmConfig" finished-at="2023-08-29T16:12:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="text()[pri:1, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:12:53 IST" name="text" finished-at="2023-08-29T16:13:03 IST" duration-ms="10703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- text -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:03 IST" name="amConfig" finished-at="2023-08-29T16:13:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:03 IST" name="bmConfig" finished-at="2023-08-29T16:13:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="like()[pri:2, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:03 IST" name="like" finished-at="2023-08-29T16:13:04 IST" duration-ms="61" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Element <nz-select class="form-control custom-f-control ng-tns-c9-7 ant-select ant-select-enabled ng-untouched ng-pristine ng-invalid" name="TagsCategory"> is not clickable at point (817,404) because another element <div class="cdk-overlay-backdrop nz-overlay-transparent-backdrop cdk-overlay-backdrop-showing"> obscures it
+              <![CDATA[Element <span class="mdi mdi-heart action-btn"> is not clickable at point (430,420) because another element <div class="modal-backdrop fade"> obscures it
 Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f42236b1-026e-4a01-b74d-35576df296fa, clickElement {id=5d5821b4-ee92-4f6c-8619-7926df45084d}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:8768, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2208, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8768/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (f42236b1-026e-4a01-b74d-35576df296fa)] -> name: TagsCategory]
-Session ID: f42236b1-026e-4a01-b74d-35576df296fa]]>
+Command: [76e65c4a-1f3e-4faa-ae87-f2375d0efda8, clickElement {id=12357ed4-90e6-4c46-a094-b4f4cbe4ef72}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:25886, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1172, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25886/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (76e65c4a-1f3e-4faa-ae87-f2375d0efda8)] -> xpath: //span[@class='mdi mdi-heart action-btn']]
+Session ID: 76e65c4a-1f3e-4faa-ae87-f2375d0efda8]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <nz-select class="form-control custom-f-control ng-tns-c9-7 ant-select ant-select-enabled ng-untouched ng-pristine ng-invalid" name="TagsCategory"> is not clickable at point (817,404) because another element <div class="cdk-overlay-backdrop nz-overlay-transparent-backdrop cdk-overlay-backdrop-showing"> obscures it
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="mdi mdi-heart action-btn"> is not clickable at point (430,420) because another element <div class="modal-backdrop fade"> obscures it
 Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f42236b1-026e-4a01-b74d-35576df296fa, clickElement {id=5d5821b4-ee92-4f6c-8619-7926df45084d}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:8768, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2208, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8768/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (f42236b1-026e-4a01-b74d-35576df296fa)] -> name: TagsCategory]
-Session ID: f42236b1-026e-4a01-b74d-35576df296fa
+Command: [76e65c4a-1f3e-4faa-ae87-f2375d0efda8, clickElement {id=12357ed4-90e6-4c46-a094-b4f4cbe4ef72}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:25886, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1172, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25886/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (76e65c4a-1f3e-4faa-ae87-f2375d0efda8)] -> xpath: //span[@class='mdi mdi-heart action-btn']]
+Session ID: 76e65c4a-1f3e-4faa-ae87-f2375d0efda8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -54,14 +525,13 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
-at skillbox.ObjectRepository.ProfileSettingPage.profileCompleteFan(ProfileSettingPage.java:343)
-at skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest.signupf(SignUpFanTest.java:22)
+at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+at skillbox.ObjectRepository.FeedsPage.feedLike(FeedsPage.java:185)
+at skillbox.FeedsTest.FeedsTest.like(FeedsTest.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,20 +565,842 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signupf -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@13d73f29]" started-at="2023-08-25T16:39:04 IST" name="amConfig" finished-at="2023-08-25T16:39:04 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- like -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:04 IST" name="amConfig" finished-at="2023-08-29T16:13:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@13d73f29]" started-at="2023-08-25T16:39:04 IST" name="acConfig" finished-at="2023-08-25T16:39:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:04 IST" name="bmConfig" finished-at="2023-08-29T16:13:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="audio()[pri:3, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:04 IST" name="audio" finished-at="2023-08-29T16:13:04 IST" duration-ms="50" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <div class="bg-light sub-text ml-3 flex-grow-1 border rounded px-4 py-3 h-100 cursor-pointer"> is not clickable at point (709,121) because another element <div class="modal-backdrop fade"> obscures it
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [76e65c4a-1f3e-4faa-ae87-f2375d0efda8, clickElement {id=4bbff361-5ee2-49d1-937e-b3e738550f0d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:25886, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1172, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25886/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (76e65c4a-1f3e-4faa-ae87-f2375d0efda8)] -> xpath: //div[text()=' Whats new? ']]
+Session ID: 76e65c4a-1f3e-4faa-ae87-f2375d0efda8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <div class="bg-light sub-text ml-3 flex-grow-1 border rounded px-4 py-3 h-100 cursor-pointer"> is not clickable at point (709,121) because another element <div class="modal-backdrop fade"> obscures it
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [76e65c4a-1f3e-4faa-ae87-f2375d0efda8, clickElement {id=4bbff361-5ee2-49d1-937e-b3e738550f0d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:25886, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1172, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25886/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (76e65c4a-1f3e-4faa-ae87-f2375d0efda8)] -> xpath: //div[text()=' Whats new? ']]
+Session ID: 76e65c4a-1f3e-4faa-ae87-f2375d0efda8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+at skillbox.ObjectRepository.FeedsPage.feedsPostAudio(FeedsPage.java:199)
+at skillbox.FeedsTest.FeedsTest.audio(FeedsTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- audio -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:04 IST" name="amConfig" finished-at="2023-08-29T16:13:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:04 IST" name="bmConfig" finished-at="2023-08-29T16:13:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="video()[pri:4, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:04 IST" name="video" finished-at="2023-08-29T16:13:28 IST" duration-ms="23939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- video -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:28 IST" name="amConfig" finished-at="2023-08-29T16:13:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:28 IST" name="bmConfig" finished-at="2023-08-29T16:13:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="image()[pri:5, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:28 IST" name="image" finished-at="2023-08-29T16:13:40 IST" duration-ms="12172" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <span class="mdi mdi-dots-horizontal drop-down-icon"> is not clickable at point (911,627) because another element <div class="modal-backdrop fade show"> obscures it
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [76e65c4a-1f3e-4faa-ae87-f2375d0efda8, clickElement {id=0f229b29-2880-4425-af50-5852bdc3ab6c}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:25886, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1172, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25886/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (76e65c4a-1f3e-4faa-ae87-f2375d0efda8)] -> xpath: //span[@data-toggle='dropdown']]
+Session ID: 76e65c4a-1f3e-4faa-ae87-f2375d0efda8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="mdi mdi-dots-horizontal drop-down-icon"> is not clickable at point (911,627) because another element <div class="modal-backdrop fade show"> obscures it
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [76e65c4a-1f3e-4faa-ae87-f2375d0efda8, clickElement {id=0f229b29-2880-4425-af50-5852bdc3ab6c}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:25886, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1172, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25886/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (76e65c4a-1f3e-4faa-ae87-f2375d0efda8)] -> xpath: //span[@data-toggle='dropdown']]
+Session ID: 76e65c4a-1f3e-4faa-ae87-f2375d0efda8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+at skillbox.ObjectRepository.FeedsPage.delete(FeedsPage.java:156)
+at skillbox.ObjectRepository.FeedsPage.feedsPostImg(FeedsPage.java:271)
+at skillbox.FeedsTest.FeedsTest.image(FeedsTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- image -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:40 IST" name="amConfig" finished-at="2023-08-29T16:13:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@1169afe1]" started-at="2023-08-29T16:13:40 IST" name="acConfig" finished-at="2023-08-29T16:13:43 IST" duration-ms="3620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@13d73f29]" started-at="2023-08-25T16:39:04 IST" name="asConfig" finished-at="2023-08-25T16:39:04 IST" duration-ms="1" status="PASS">
+      </class> <!-- skillbox.FeedsTest.FeedsTest -->
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@3576ddc2]" started-at="2023-08-29T16:08:29 IST" name="bcConfig" finished-at="2023-08-29T16:08:39 IST" duration-ms="9655" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@3576ddc2]" started-at="2023-08-29T16:08:39 IST" name="bmConfig" finished-at="2023-08-29T16:08:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="signupb()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@3576ddc2]" started-at="2023-08-29T16:08:39 IST" name="signupb" finished-at="2023-08-29T16:09:16 IST" duration-ms="37446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupb -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@3576ddc2]" started-at="2023-08-29T16:09:16 IST" name="amConfig" finished-at="2023-08-29T16:09:16 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@3576ddc2]" started-at="2023-08-29T16:09:16 IST" name="acConfig" finished-at="2023-08-29T16:09:21 IST" duration-ms="5357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest -->
+      <class name="skillbox.PunchSalesTest.PunchSalesTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@33f676f6]" started-at="2023-08-29T16:05:49 IST" name="bcConfig" finished-at="2023-08-29T16:06:41 IST" duration-ms="51740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@33f676f6]" started-at="2023-08-29T16:06:41 IST" name="bmConfig" finished-at="2023-08-29T16:06:41 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="punchsale()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@33f676f6]" started-at="2023-08-29T16:06:41 IST" name="punchsale" finished-at="2023-08-29T16:07:18 IST" duration-ms="36631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- punchsale -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@33f676f6]" started-at="2023-08-29T16:07:18 IST" name="amConfig" finished-at="2023-08-29T16:07:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@33f676f6]" started-at="2023-08-29T16:07:18 IST" name="acConfig" finished-at="2023-08-29T16:07:21 IST" duration-ms="3403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.PunchSalesTest.PunchSalesTest -->
+      <class name="skillbox.CreateDiyTest.CreateDiyTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@4c5ae43b]" started-at="2023-08-29T16:07:21 IST" name="bcConfig" finished-at="2023-08-29T16:07:30 IST" duration-ms="8550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@4c5ae43b]" started-at="2023-08-29T16:07:30 IST" name="bmConfig" finished-at="2023-08-29T16:07:30 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="creatediy()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@4c5ae43b]" started-at="2023-08-29T16:07:30 IST" name="creatediy" finished-at="2023-08-29T16:07:37 IST" duration-ms="7432" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <nz-select class="custom-f-control ng-tns-c9-5 ant-select ant-select-lg ant-select-enabled ng-untouched ng-pristine ng-invalid"> is not clickable at point (674,318) because another element <circle> obscures it
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [3370837a-6b50-4919-89be-681b3aacadac, clickElement {id=e6075056-306b-4f65-96e1-473cbff241c7}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:30267, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8224, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:30267/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (3370837a-6b50-4919-89be-681b3aacadac)] -> xpath: //div[@class='row']/div[4]/nz-select]
+Session ID: 3370837a-6b50-4919-89be-681b3aacadac]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <nz-select class="custom-f-control ng-tns-c9-5 ant-select ant-select-lg ant-select-enabled ng-untouched ng-pristine ng-invalid"> is not clickable at point (674,318) because another element <circle> obscures it
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [3370837a-6b50-4919-89be-681b3aacadac, clickElement {id=e6075056-306b-4f65-96e1-473cbff241c7}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:30267, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8224, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:30267/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (3370837a-6b50-4919-89be-681b3aacadac)] -> xpath: //div[@class='row']/div[4]/nz-select]
+Session ID: 3370837a-6b50-4919-89be-681b3aacadac
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+at skillbox.ObjectRepository.CreateListingPage.fillDiyForm(CreateListingPage.java:307)
+at skillbox.CreateDiyTest.CreateDiyTest.creatediy(CreateDiyTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatediy -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@4c5ae43b]" started-at="2023-08-29T16:07:37 IST" name="amConfig" finished-at="2023-08-29T16:07:37 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@4c5ae43b]" started-at="2023-08-29T16:07:37 IST" name="acConfig" finished-at="2023-08-29T16:07:39 IST" duration-ms="2010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateDiyTest.CreateDiyTest -->
+      <class name="skillbox.EventBookTest.PaidEventBookTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@747f281]" started-at="2023-08-29T16:12:13 IST" name="bcConfig" finished-at="2023-08-29T16:12:21 IST" duration-ms="7972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@747f281]" started-at="2023-08-29T16:12:21 IST" name="bmConfig" finished-at="2023-08-29T16:12:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="eventbook()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@747f281]" started-at="2023-08-29T16:12:21 IST" name="eventbook" finished-at="2023-08-29T16:12:43 IST" duration-ms="21934" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element with the reference 97ccfcc5-c1d2-4dab-9f9b-6caf35d514d8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [54c3b805-832f-4a57-ace6-6a8019b5c788, isElementDisplayed {id=97ccfcc5-c1d2-4dab-9f9b-6caf35d514d8}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:43751, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11644, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:43751/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (54c3b805-832f-4a57-ace6-6a8019b5c788)] -> xpath: //input[@placeholder='Email address']]
+Session ID: 54c3b805-832f-4a57-ace6-6a8019b5c788]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference 97ccfcc5-c1d2-4dab-9f9b-6caf35d514d8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [54c3b805-832f-4a57-ace6-6a8019b5c788, isElementDisplayed {id=97ccfcc5-c1d2-4dab-9f9b-6caf35d514d8}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:43751, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11644, moz:profile: C:\Users\SHIVAM~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:43751/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (54c3b805-832f-4a57-ace6-6a8019b5c788)] -> xpath: //input[@placeholder='Email address']]
+Session ID: 54c3b805-832f-4a57-ace6-6a8019b5c788
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+at skillbox.GenericUtilities.WebDriverUtility.waitForElementToBeVisible(WebDriverUtility.java:72)
+at skillbox.ObjectRepository.EventBookingPage.signupOnEventBook(EventBookingPage.java:165)
+at skillbox.EventBookTest.PaidEventBookTest.eventbook(PaidEventBookTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@747f281]" started-at="2023-08-29T16:12:43 IST" name="amConfig" finished-at="2023-08-29T16:12:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@747f281]" started-at="2023-08-29T16:12:43 IST" name="acConfig" finished-at="2023-08-29T16:12:45 IST" duration-ms="1957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.EventBookTest.PaidEventBookTest -->
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@35b74c5c]" started-at="2023-08-29T16:09:21 IST" name="bcConfig" finished-at="2023-08-29T16:09:31 IST" duration-ms="9354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@35b74c5c]" started-at="2023-08-29T16:09:31 IST" name="bmConfig" finished-at="2023-08-29T16:09:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="signupf()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@35b74c5c]" started-at="2023-08-29T16:09:31 IST" name="signupf" finished-at="2023-08-29T16:10:04 IST" duration-ms="32847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupf -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@35b74c5c]" started-at="2023-08-29T16:10:04 IST" name="amConfig" finished-at="2023-08-29T16:10:04 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@35b74c5c]" started-at="2023-08-29T16:10:04 IST" name="acConfig" finished-at="2023-08-29T16:10:08 IST" duration-ms="4008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest -->
+    </test> <!-- Test-Runner-firefox -->
+    <test started-at="2023-08-29T16:13:43 IST" name="Test-Runner-IE" finished-at="2023-08-29T16:22:50 IST" duration-ms="546300">
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@2ca923bb]" started-at="2023-08-29T16:16:43 IST" name="bcConfig" finished-at="2023-08-29T16:16:47 IST" duration-ms="4507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@2ca923bb]" started-at="2023-08-29T16:16:47 IST" name="bmConfig" finished-at="2023-08-29T16:16:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="signua()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@2ca923bb]" started-at="2023-08-29T16:16:47 IST" name="signua" finished-at="2023-08-29T16:17:23 IST" duration-ms="35285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signua -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@2ca923bb]" started-at="2023-08-29T16:17:23 IST" name="amConfig" finished-at="2023-08-29T16:17:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest@2ca923bb]" started-at="2023-08-29T16:17:23 IST" name="acConfig" finished-at="2023-08-29T16:17:23 IST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpArtistTest -->
+      <class name="skillbox.EventBookTest.FreeEventBookTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@7de62196]" started-at="2023-08-29T16:19:52 IST" name="bcConfig" finished-at="2023-08-29T16:19:56 IST" duration-ms="4584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@7de62196]" started-at="2023-08-29T16:19:56 IST" name="bmConfig" finished-at="2023-08-29T16:19:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="freeticketbook()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@7de62196]" started-at="2023-08-29T16:19:56 IST" name="freeticketbook" finished-at="2023-08-29T16:20:22 IST" duration-ms="25466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeticketbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@7de62196]" started-at="2023-08-29T16:20:22 IST" name="amConfig" finished-at="2023-08-29T16:20:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.FreeEventBookTest@7de62196]" started-at="2023-08-29T16:20:22 IST" name="acConfig" finished-at="2023-08-29T16:20:22 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.EventBookTest.FreeEventBookTest -->
+      <class name="skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@72d6b3ba]" started-at="2023-08-29T16:18:39 IST" name="bcConfig" finished-at="2023-08-29T16:18:43 IST" duration-ms="4768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@72d6b3ba]" started-at="2023-08-29T16:18:43 IST" name="bmConfig" finished-at="2023-08-29T16:18:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createpromoter()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@72d6b3ba]" started-at="2023-08-29T16:18:43 IST" name="createpromoter" finished-at="2023-08-29T16:19:04 IST" duration-ms="20516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createpromoter -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@72d6b3ba]" started-at="2023-08-29T16:19:04 IST" name="amConfig" finished-at="2023-08-29T16:19:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest@72d6b3ba]" started-at="2023-08-29T16:19:04 IST" name="acConfig" finished-at="2023-08-29T16:19:04 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreatePromoterAndWalkin.CreatePromoterAndWalkinTest -->
+      <class name="skillbox.EventBookTest.AddOnEventBookTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@1787f2a0]" started-at="2023-08-29T16:19:04 IST" name="bcConfig" finished-at="2023-08-29T16:19:09 IST" duration-ms="4576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@1787f2a0]" started-at="2023-08-29T16:19:09 IST" name="bmConfig" finished-at="2023-08-29T16:19:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="freeticketbook()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@1787f2a0]" started-at="2023-08-29T16:19:09 IST" name="freeticketbook" finished-at="2023-08-29T16:19:51 IST" duration-ms="42479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeticketbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@1787f2a0]" started-at="2023-08-29T16:19:51 IST" name="amConfig" finished-at="2023-08-29T16:19:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.AddOnEventBookTest@1787f2a0]" started-at="2023-08-29T16:19:51 IST" name="acConfig" finished-at="2023-08-29T16:19:52 IST" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.EventBookTest.AddOnEventBookTest -->
+      <class name="skillbox.FeedsTest.FeedsTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:21:26 IST" name="bcConfig" finished-at="2023-08-29T16:21:30 IST" duration-ms="4417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:21:30 IST" name="bmConfig" finished-at="2023-08-29T16:21:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="text()[pri:1, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:21:30 IST" name="text" finished-at="2023-08-29T16:21:40 IST" duration-ms="9954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- text -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:21:40 IST" name="amConfig" finished-at="2023-08-29T16:21:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:21:40 IST" name="bmConfig" finished-at="2023-08-29T16:21:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="like()[pri:2, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:21:40 IST" name="like" finished-at="2023-08-29T16:21:42 IST" duration-ms="2468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- like -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:21:42 IST" name="amConfig" finished-at="2023-08-29T16:21:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:21:42 IST" name="bmConfig" finished-at="2023-08-29T16:21:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="audio()[pri:3, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:21:42 IST" name="audio" finished-at="2023-08-29T16:22:09 IST" duration-ms="26234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- audio -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:22:09 IST" name="amConfig" finished-at="2023-08-29T16:22:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:22:09 IST" name="bmConfig" finished-at="2023-08-29T16:22:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="video()[pri:4, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:22:09 IST" name="video" finished-at="2023-08-29T16:22:35 IST" duration-ms="26774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- video -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:22:35 IST" name="amConfig" finished-at="2023-08-29T16:22:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:22:35 IST" name="bmConfig" finished-at="2023-08-29T16:22:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="image()[pri:5, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:22:35 IST" name="image" finished-at="2023-08-29T16:22:49 IST" duration-ms="13907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- image -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:22:49 IST" name="amConfig" finished-at="2023-08-29T16:22:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.FeedsTest.FeedsTest@51bf5add]" started-at="2023-08-29T16:22:49 IST" name="acConfig" finished-at="2023-08-29T16:22:50 IST" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.FeedsTest.FeedsTest -->
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@13df2a8c]" started-at="2023-08-29T16:17:23 IST" name="bcConfig" finished-at="2023-08-29T16:17:28 IST" duration-ms="4491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@13df2a8c]" started-at="2023-08-29T16:17:28 IST" name="bmConfig" finished-at="2023-08-29T16:17:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="signupb()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@13df2a8c]" started-at="2023-08-29T16:17:28 IST" name="signupb" finished-at="2023-08-29T16:18:03 IST" duration-ms="35009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupb -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@13df2a8c]" started-at="2023-08-29T16:18:03 IST" name="amConfig" finished-at="2023-08-29T16:18:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest@13df2a8c]" started-at="2023-08-29T16:18:03 IST" name="acConfig" finished-at="2023-08-29T16:18:03 IST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpBusinessTest -->
+      <class name="skillbox.PunchSalesTest.PunchSalesTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@4808bc9b]" started-at="2023-08-29T15:56:39 IST" name="bsConfig" finished-at="2023-08-29T15:56:39 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsConfig -->
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@4808bc9b]" started-at="2023-08-29T16:13:43 IST" name="bcConfig" finished-at="2023-08-29T16:14:35 IST" duration-ms="51364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@4808bc9b]" started-at="2023-08-29T16:14:35 IST" name="bmConfig" finished-at="2023-08-29T16:14:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="punchsale()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@4808bc9b]" started-at="2023-08-29T16:14:35 IST" name="punchsale" finished-at="2023-08-29T16:15:09 IST" duration-ms="34620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- punchsale -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@4808bc9b]" started-at="2023-08-29T16:15:09 IST" name="amConfig" finished-at="2023-08-29T16:15:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@4808bc9b]" started-at="2023-08-29T16:15:09 IST" name="acConfig" finished-at="2023-08-29T16:15:10 IST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:skillbox.PunchSalesTest.PunchSalesTest@4808bc9b]" started-at="2023-08-29T16:22:50 IST" name="asConfig" finished-at="2023-08-29T16:22:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
+      </class> <!-- skillbox.PunchSalesTest.PunchSalesTest -->
+      <class name="skillbox.CreateDiyTest.CreateDiyTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@70e38ce1]" started-at="2023-08-29T16:15:10 IST" name="bcConfig" finished-at="2023-08-29T16:15:21 IST" duration-ms="11102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@70e38ce1]" started-at="2023-08-29T16:15:21 IST" name="bmConfig" finished-at="2023-08-29T16:15:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="creatediy()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@70e38ce1]" started-at="2023-08-29T16:15:21 IST" name="creatediy" finished-at="2023-08-29T16:16:42 IST" duration-ms="81342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatediy -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@70e38ce1]" started-at="2023-08-29T16:16:42 IST" name="amConfig" finished-at="2023-08-29T16:16:42 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateDiyTest.CreateDiyTest@70e38ce1]" started-at="2023-08-29T16:16:42 IST" name="acConfig" finished-at="2023-08-29T16:16:43 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.CreateDiyTest.CreateDiyTest -->
+      <class name="skillbox.EventBookTest.PaidEventBookTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@163370c2]" started-at="2023-08-29T16:20:22 IST" name="bcConfig" finished-at="2023-08-29T16:20:27 IST" duration-ms="4533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@163370c2]" started-at="2023-08-29T16:20:27 IST" name="bmConfig" finished-at="2023-08-29T16:20:27 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="eventbook()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@163370c2]" started-at="2023-08-29T16:20:27 IST" name="eventbook" finished-at="2023-08-29T16:21:25 IST" duration-ms="58386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@163370c2]" started-at="2023-08-29T16:21:25 IST" name="amConfig" finished-at="2023-08-29T16:21:25 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@163370c2]" started-at="2023-08-29T16:21:25 IST" name="acConfig" finished-at="2023-08-29T16:21:26 IST" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- skillbox.EventBookTest.PaidEventBookTest -->
+      <class name="skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest">
+        <test-method is-config="true" signature="bcConfig(java.lang.String)[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@1ebea008]" started-at="2023-08-29T16:18:03 IST" name="bcConfig" finished-at="2023-08-29T16:18:07 IST" duration-ms="4383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@1ebea008]" started-at="2023-08-29T16:18:07 IST" name="bmConfig" finished-at="2023-08-29T16:18:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="signupf()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@1ebea008]" started-at="2023-08-29T16:18:07 IST" name="signupf" finished-at="2023-08-29T16:18:38 IST" duration-ms="30742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupf -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@1ebea008]" started-at="2023-08-29T16:18:38 IST" name="amConfig" finished-at="2023-08-29T16:18:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest@1ebea008]" started-at="2023-08-29T16:18:38 IST" name="acConfig" finished-at="2023-08-29T16:18:39 IST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
       </class> <!-- skillbox.CreateProfileWithProfileCompleteTest.SignUpFanTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test-Runner-IE -->
+  </suite> <!-- Suite -->
 </testng-results>
