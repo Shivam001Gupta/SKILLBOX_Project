@@ -12,7 +12,7 @@ import skillbox.ObjectRepository.EventTicketPage;
 public class AddOnEventBookTest extends BaseClass {
 	
 	@Test
-	  public void freeticketbook() throws Throwable
+	  public void addoneventbook() throws Throwable
 	  {
 		  //Open Free Event By URL
 		  driver.get("https://www.sbmailer.com/events/skillbox-add-on-event-kt");

@@ -1,5 +1,7 @@
 package skillbox.ObjectRepository;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +15,7 @@ public class AddOnPage extends WebDriverUtility {
 	@FindBy(xpath="//input[@name='addOns']/..")
 	private WebElement addOnSelectCheck;
 	
-	@FindBy(xpath="//div[@class='mr-3']/select")
+	@FindBy(xpath="//div[@class='mr-3 ng-star-inserted']/select")
 	private WebElement addOnCategory;
 	
 	@FindBy(xpath="//div[@class='ng-star-inserted']/select")
@@ -24,6 +26,19 @@ public class AddOnPage extends WebDriverUtility {
 	
 	@FindBy(xpath="//button[text()='Checkout']")
 	private WebElement addOnCheckOutBtn;
+	
+	@FindBy(xpath="//div[@unselectable='unselectable']")
+	private WebElement cityClk;
+	
+	@FindBy(xpath="//nz-select[@nzplaceholder='City*']/div/div/div[2]/div/input")   // "//nz-select[@nzplaceholder='City*']"
+	private WebElement cityEdt;
+	
+	@FindBy(xpath="//li[@unselectable='unselectable']")
+	private List<WebElement> listItems;
+	
+	@FindBy(xpath="//input[@placeholder='Pincode*']")
+	private WebElement pincodeEdt;
+	
 	
 	
 	
@@ -51,6 +66,22 @@ public class AddOnPage extends WebDriverUtility {
 	public WebElement getAddOnCheckOutBtn() {
 		return addOnCheckOutBtn;
 	}
+	
+	public WebElement getCityClk() {
+		return cityClk;
+	}
+
+	public List<WebElement> getListItems() {
+		return listItems;
+	}
+
+	public WebElement getPincodeEdt() {
+		return pincodeEdt;
+	}
+	
+	public WebElement getCityEdt() {
+		return cityEdt;
+	}
 
 	
 	public void addOnData(WebDriver driver, String category, String quantity, String Address) throws Throwable
@@ -64,6 +95,31 @@ public class AddOnPage extends WebDriverUtility {
 		addOnCheckOutBtn.click();
 				
 	}
+
+	public void addOnDataSupersonic(WebDriver driver, String city, String pincode, String Address)throws Throwable
+	{
+		{
+		    waitForElementToBeVisible(driver, addOnCheckOutBtn);
+			Thread.sleep(3000);
+			shippingAddressEdt.sendKeys(Address);
+			cityClk.click();
+			Thread.sleep(3000);
+			cityEdt.sendKeys(city);
+			Thread.sleep(3000);
+			selectItemFromList(driver, city, listItems);
+			Thread.sleep(5000);
+//			escapeClickAction(driver);
+			pincodeEdt.sendKeys(pincode);
+			addOnCheckOutBtn.click();
+					
+		}
+	}
+
+	
+	
+	
+	
+	
 	
 	
 

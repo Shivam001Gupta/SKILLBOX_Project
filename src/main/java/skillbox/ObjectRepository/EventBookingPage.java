@@ -65,6 +65,10 @@ public class EventBookingPage extends WebDriverUtility {
 	@FindBy(xpath="//h2[@class='ng-star-inserted']")
 	private WebElement freeTicketConfirmationMsg;
 	
+	@FindBy(xpath="//*[text()=' Confirm ']/..")
+	private WebElement acceptCovidguidelines;
+	
+	
 	public EventBookingPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -210,6 +214,15 @@ public class EventBookingPage extends WebDriverUtility {
 	{
 		pinCodeEdt.sendKeys(pincode);
 		confirmPay.click();
+			
+	}
+	
+	public void supersonicPay(WebDriver driver) throws InterruptedException
+	{
+		Thread.sleep(5000);
+		confirmPay.click();
+		Thread.sleep(3000);
+		acceptCovidguidelines.click();
 			
 	}
 	

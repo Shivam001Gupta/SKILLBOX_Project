@@ -71,6 +71,24 @@ public class EventPaymentPage extends WebDriverUtility {
 			
 	}
 	
+	public void payAmountSuccesspopup(WebDriver driver) throws Throwable
+	{
+//		waitForElementToBeVisible(driver, walletPaymentMethod);
+		swtichToWindow(driver, "razorpay");
+		phonePePaymentMethod.click();
+		Thread.sleep(2000);
+		payButton.click();
+		Thread.sleep(3000);
+		swtichToWindow(driver, "razorpay");
+		successBtn.click();
+		swtichToWindow(driver, "sbmailer.com");
+		waitForElementToBeVisible(driver, eventSBCode);
+		Thread.sleep(2000);
+		
+			
+	}
+	
+	
 	
 
 	  

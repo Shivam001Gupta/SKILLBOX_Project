@@ -80,6 +80,9 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(linkText="Paid")
 	private WebElement paidTicketClk;
 	
+	@FindBy(linkText="RSVP/Free")
+	private WebElement freeTicketClk;
+		
 	@FindBy(xpath="//input[@placeholder='Ticket Name']")
 	private WebElement ticketNameEdt;
 	
@@ -97,6 +100,9 @@ public class CreateListingPage extends WebDriverUtility {
 	
 	@FindBy(xpath="//span[text()='No']/..")
 	private WebElement ticketEnableBtn;
+	
+	@FindBy(xpath="//div[text()=' Add More Tickets ']")
+	private WebElement addMoreTicketClk;
 
 	@FindBy(xpath="//*[text()='Manage Discounts']")
 	private WebElement couponManageDiscountsClk;
@@ -241,6 +247,15 @@ public class CreateListingPage extends WebDriverUtility {
 		return paidTicketClk;
 	}
 	
+	public WebElement getFreeTicketClk() {
+		return freeTicketClk;
+	}
+	
+	public WebElement getAddMoreTicketClk() {
+		return addMoreTicketClk;
+	}
+
+	
 	public WebElement getCouponManageDiscountsClk() {
 		return couponManageDiscountsClk;
 	}
@@ -303,6 +318,7 @@ public class CreateListingPage extends WebDriverUtility {
 
 	public void fillDiyForm(WebDriver driver, String city) throws Throwable
 	{
+		Thread.sleep(5000);
 		eventTitleTextEdt.sendKeys("The Title of Event Night Club TEST");
 		categoryClk.click();
 		Thread.sleep(3000);
@@ -349,6 +365,22 @@ public class CreateListingPage extends WebDriverUtility {
 		
 	}
 	
+	public void createFreeTicket(WebDriver driver, String ticketname ) throws Throwable
+	{
+		waitForElementToBeVisible(driver, addMoreTicketClk);
+		addMoreTicketClk.click();
+		Thread.sleep(2000);
+		waitForElementToBeVisible(driver, freeTicketClk);
+		freeTicketClk.click();
+		ticketNameEdt.sendKeys(ticketname);
+		dateAndTime(driver);
+		ticketQuantity.sendKeys("100");
+		ticketSubmitBtn.click();
+		Thread.sleep(2000);
+		ticketEnableBtn.click();
+		
+	}
+	
 	
 	public void createCoupon(WebDriver driver) throws Throwable
 	{
@@ -370,6 +402,9 @@ public class CreateListingPage extends WebDriverUtility {
 		
 		
 	}
+
+	
+	
 	
 	
 	}

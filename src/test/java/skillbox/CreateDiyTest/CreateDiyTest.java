@@ -19,8 +19,11 @@ public class CreateDiyTest extends BaseClass {
 		CreateListingPage clp = new CreateListingPage(driver);
 		clp.fillDiyForm(driver, "New Delhi");
 		
-		//Create Ticket
+		//Create Paid Ticket
 		clp.createTicket(driver, "Early Bird");
+		
+		//Create Free Ticket
+		clp.createFreeTicket(driver, "RSVP");
 		
         //Create Coupon & Delete Coupon
 		clp.createCoupon(driver);

@@ -9,7 +9,10 @@ import skillbox.GenericUtilities.WebDriverUtility;
 
 public class EventTicketPage extends WebDriverUtility {
 	
-	@FindBy(linkText="Livestream Pass")
+	
+	
+
+	@FindBy(xpath="//div[@class='list-group']/a")
 	private WebElement passSelect;
 	
 	@FindBy(xpath="//div[@class='qty qty_active']/select")
@@ -20,6 +23,15 @@ public class EventTicketPage extends WebDriverUtility {
 	
 	@FindBy(xpath="//*[text()='Checkout']")
 	private WebElement ticketCheckout;
+	
+	@FindBy(xpath="//input[@placeholder='Enter amount']")
+	private WebElement donationAmountEdt;
+	
+	@FindBy(xpath="//input[@placeholder='Paste Entry code']")
+	private WebElement entryCouponPaste;
+	
+	@FindBy(xpath="//button[@class='supersonic-right btn']")
+	private WebElement goBtn;
 	
 	public EventTicketPage(WebDriver driver)
 	{
@@ -42,6 +54,17 @@ public class EventTicketPage extends WebDriverUtility {
 		return ticketCheckout;
 	}
 	
+	public WebElement getDonationAmountEdt() {
+		return donationAmountEdt;
+	}
+	
+	public WebElement getEntryCouponPaste() {
+		return entryCouponPaste;
+	}
+	public WebElement getGoBtn() {
+		return goBtn;
+	}
+	
 	
 	
 	public void selectTicket(String text) throws Throwable
@@ -59,6 +82,25 @@ public class EventTicketPage extends WebDriverUtility {
 		handleDropDown(text, ticketQty);
 		ticketCheckout.click();
 	}
+	
+	public void selectDonationTicket(String text)
+	{
+		donationAmountEdt.sendKeys(text);
+		ticketCheckout.click();
+	}
+	
+	public void selectTicketsupersonicwidget(String text) throws Throwable
+	{		
+		passSelect.click();
+		Thread.sleep(2000);
+		entryCouponPaste.sendKeys("ENTER1234");
+		goBtn.click();
+		Thread.sleep(3000);
+		ticketCheckout.click();
+		
+	}
+
+	
 	
 
 }
