@@ -10,8 +10,8 @@
           <include name="bmConfig"/>
           <include name="bcConfig"/>
           <include name="creatediy"/>
-          <include name="amConfig"/>
           <include name="asConfig"/>
+          <include name="amConfig"/>
         </methods>
       </class> <!-- skillbox.CreateDiyTest.CreateDiyTest -->
     </classes>

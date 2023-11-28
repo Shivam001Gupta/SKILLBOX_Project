@@ -101,7 +101,7 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//span[text()='No']/..")
 	private WebElement ticketEnableBtn;
 	
-	@FindBy(xpath="//div[text()=' Add More Tickets ']")
+	@FindBy(xpath="//div[text()=' Add More Tickets '][1]")
 	private WebElement addMoreTicketClk;
 
 	@FindBy(xpath="//*[text()='Manage Discounts']")
@@ -368,6 +368,7 @@ public class CreateListingPage extends WebDriverUtility {
 	public void createFreeTicket(WebDriver driver, String ticketname ) throws Throwable
 	{
 		waitForElementToBeVisible(driver, addMoreTicketClk);
+		Thread.sleep(5000);
 		addMoreTicketClk.click();
 		Thread.sleep(2000);
 		waitForElementToBeVisible(driver, freeTicketClk);
