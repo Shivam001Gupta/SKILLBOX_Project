@@ -19,7 +19,7 @@ public class SupersonicEventWidget extends BaseClass {
 			
 		
 		//Select Ticket and Quantity
-	      EventTicketPage etp = new EventTicketPage(driver);
+	      EventTicketPage etp  = new EventTicketPage(driver);
 	      etp.selectTicketsupersonicwidget("1");
 	      
 	    //Select Add-On and Submit  
