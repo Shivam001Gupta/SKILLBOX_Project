@@ -334,6 +334,7 @@ public class CreateListingPage extends WebDriverUtility {
 		selectMultipleDayEventClk.click();
 		dateAndTime(driver);
 		eventDescriptionEdt.sendKeys("This is the Event Description of the Check Point");
+		Thread.sleep(3000);
 		selectCityClk.click();
 		selectItemFromList(driver, city, listItems);
 		selectVenueClk.click();
