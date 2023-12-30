@@ -101,7 +101,7 @@
 
 
 <!-- This is used to run cross browser execution (mvn test -P crosssbrowser), parameter tag, browser parameter-->
-<!-- <profiles>
+ <!-- <profiles>
 	<profile>
 <id>crossbrowser</id>
 <build>
@@ -119,6 +119,6 @@
 </plugins>
 </build>  
 </profile> 
-</profiles>  -->
+</profiles>   -->	
   
 </project>

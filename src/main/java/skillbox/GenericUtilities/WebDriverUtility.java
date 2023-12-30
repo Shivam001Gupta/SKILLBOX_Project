@@ -203,15 +203,25 @@ public class WebDriverUtility {
 	}
 	
 	/**
-	 * This method will scroll vertically for 500 pixels
+	 * This method will scroll up vertically for 1000 pixels
 	 * @param driver
 	 */
 	public void scrollAction(WebDriver driver)
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,500);", "");
+		js.executeScript("window.scrollBy(0,-1000);", "");
 	}
 	
+	/**
+	 * This method will scroll down vertically for 1000 pixels
+	 * @param driver
+	 */
+	public void scrollActionDown(WebDriver driver)
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+
+	}
 	/**
 	 * This method will scroll vertically until the element reference
 	 * @param driver

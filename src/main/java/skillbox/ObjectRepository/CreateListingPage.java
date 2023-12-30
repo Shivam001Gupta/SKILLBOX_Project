@@ -59,7 +59,7 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//*[text()='Description']/..//angular-editor/div/div/div")
 	private WebElement eventDescriptionEdt;
 	
-	@FindBy(xpath="//div[text()='Search city']")
+	@FindBy(xpath="//nz-select[@nzplaceholder='Search city']")
 	private WebElement selectCityClk;
 	
 	@FindBy(xpath="//label[text()='Venue']/../nz-select")
@@ -334,7 +334,7 @@ public class CreateListingPage extends WebDriverUtility {
 		selectMultipleDayEventClk.click();
 		dateAndTime(driver);
 		eventDescriptionEdt.sendKeys("This is the Event Description of the Check Point");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		selectCityClk.click();
 		selectItemFromList(driver, city, listItems);
 		selectVenueClk.click();
@@ -368,8 +368,8 @@ public class CreateListingPage extends WebDriverUtility {
 	
 	public void createFreeTicket(WebDriver driver, String ticketname ) throws Throwable
 	{
-		waitForElementToBeVisible(driver, addMoreTicketClk);
 		Thread.sleep(5000);
+		scrollAction(driver);
 		addMoreTicketClk.click();
 		Thread.sleep(2000);
 		waitForElementToBeVisible(driver, freeTicketClk);
@@ -377,6 +377,7 @@ public class CreateListingPage extends WebDriverUtility {
 		ticketNameEdt.sendKeys(ticketname);
 		dateAndTime(driver);
 		ticketQuantity.sendKeys("100");
+		
 		ticketSubmitBtn.click();
 		Thread.sleep(2000);
 		ticketEnableBtn.click();
@@ -384,6 +385,8 @@ public class CreateListingPage extends WebDriverUtility {
 	}
 	
 	
+	
+
 	public void createCoupon(WebDriver driver) throws Throwable
 	{
 		couponManageDiscountsClk.click();

@@ -40,7 +40,7 @@ public class FeedsPage extends WebDriverUtility{
 	@FindBy(xpath="//button[text()='Save']")
 	private WebElement imgSaveBtn;
 	
-	@FindBy(xpath="//ng-selectize[@formcontrolname='tag']")
+	@FindBy(xpath="//*[@placeholder='e.g. Hiphop, jazz']")
 	private WebElement tagClk;
 	
 	@FindBy(xpath="//div[@class='option']")
@@ -222,7 +222,7 @@ public class FeedsPage extends WebDriverUtility{
 	}
 	
 	/**
-	 * This Method is used to Post Image on Feeds
+	 * This Method is used to Post Video on Feeds
 	 * @param driver
 	 * @param tags
 	 * @param language
@@ -237,6 +237,7 @@ public class FeedsPage extends WebDriverUtility{
 		videoBtnClk.click();
 		Thread.sleep(2000);
 		videoUpload.sendKeys(IConstants.videoFilePath);
+		Thread.sleep(5000);
 		tagClk.click();
 		selectItemFromList(driver, tags, listItems);
 		escapeClickAction(driver);
@@ -252,6 +253,13 @@ public class FeedsPage extends WebDriverUtility{
 		
 	}
 	
+	/**
+	 * This Method is used to Post Image on Feeds
+	 * @param driver
+	 * @param tags
+	 * @param language
+	 * @throws Throwable
+	 */
 	public void feedsPostImg(WebDriver driver, String tags) throws Throwable
 	{
 		Thread.sleep(5000);
@@ -266,6 +274,7 @@ public class FeedsPage extends WebDriverUtility{
 		escapeClickAction(driver);
 		imgUpload.sendKeys(IConstants.imageFilePath);
 		waitForElementToBeClickable(driver, createPostBtn);
+		Thread.sleep(2000);
 		createPostBtn.click();
 		waitForElementToBeVisible(driver, succesmsg);
 		delete();
