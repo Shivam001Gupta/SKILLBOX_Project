@@ -2,7 +2,6 @@ package skillbox.CreatePromoterAndWalkin;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.HomePage;
 import skillbox.ObjectRepository.ManageDIYPage;

@@ -127,7 +127,14 @@ public class CreateListingPage extends WebDriverUtility {
 	
 	@FindBy(xpath="//h4[@class='text-dark']")
 	private WebElement successcouponchk;
-			
+	
+	@FindBy(xpath="//input[@formcontrolname='firstLabel']")
+	private WebElement firstLabelEdt;
+	
+	@FindBy(xpath="//input[@formcontrolname='secondLabel']")
+	private WebElement secondLabelEdt;
+	
+	
 	public CreateListingPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -288,6 +295,16 @@ public class CreateListingPage extends WebDriverUtility {
 	public WebElement getSuccesscouponchk() {
 		return successcouponchk;
 	}
+	
+		
+	public WebElement getFirstLabel() {
+		return firstLabelEdt;
+	}
+	
+	public WebElement getSecondLabel() {
+		return secondLabelEdt;
+	}
+
 
 
 	
@@ -299,15 +316,18 @@ public class CreateListingPage extends WebDriverUtility {
 	public void dateAndTime(WebDriver driver) throws Throwable
 	{
 		selectDateclk.click();
-		selectStartDate.click();
-		selectEndDate.click();
-		selectStartTimeClk.click();
 		Thread.sleep(2000);
+		selectStartDate.click();
+		Thread.sleep(2000);
+		selectEndDate.click();
+		Thread.sleep(2000);
+		selectStartTimeClk.click();
+		Thread.sleep(3000);
 		selectTime.click();
 		escapeClickAction(driver);
 		Thread.sleep(2000);
 		slectEndTimeClk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		selectTime.click();
 		escapeClickAction(driver);
 		Thread.sleep(5000);
@@ -377,7 +397,12 @@ public class CreateListingPage extends WebDriverUtility {
 		ticketNameEdt.sendKeys(ticketname);
 		dateAndTime(driver);
 		ticketQuantity.sendKeys("100");
-		
+		firstLabelEdt.sendKeys("First Label");
+		secondLabelEdt.sendKeys("Second Label");
+		tabButtonAction(driver);
+		tabButtonAction(driver);
+		tabButtonAction(driver);
+    	Thread.sleep(2000);
 		ticketSubmitBtn.click();
 		Thread.sleep(2000);
 		ticketEnableBtn.click();

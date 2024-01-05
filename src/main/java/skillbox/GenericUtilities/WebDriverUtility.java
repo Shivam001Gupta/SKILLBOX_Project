@@ -126,6 +126,28 @@ public class WebDriverUtility {
 	
 	
 	/**
+	 * This Method is Used to perform Arrow Down Button Action
+	 * @param driver
+	 */
+	public void arrowDownAction(WebDriver driver)
+	{
+		Actions act = new Actions(driver);
+		act.keyDown(Keys.ARROW_DOWN).perform();
+	}
+	
+	/**
+	 * This Method is Used to perform  Tab Button Action
+	 * @param driver
+	 */
+	public void tabButtonAction(WebDriver driver)
+	{
+		Actions act = new Actions(driver);
+		act.keyDown(Keys.TAB).perform();
+	}
+	
+	
+	
+	/**
 	 * This method will perform mouse hover action on a target element
 	 * @param driver
 	 * @param element

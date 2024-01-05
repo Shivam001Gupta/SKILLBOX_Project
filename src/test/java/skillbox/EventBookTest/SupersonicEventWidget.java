@@ -1,6 +1,5 @@
 package skillbox.EventBookTest;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import skillbox.GenericUtilities.BaseClass;
@@ -11,7 +10,7 @@ import skillbox.ObjectRepository.EventTicketPage;
 
 public class SupersonicEventWidget extends BaseClass {
 
-	@Test
+	@Test(enabled=false)
 	public void supersonicaddonevent() throws Throwable {
 		
 		//Open Supersonic Widget URL

@@ -78,8 +78,9 @@ public class BaseClass {
 		//Load the URL
 		driver.get(URL);
 		
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//p[text()=' New Delhi ']")).click();
-		
+		Thread.sleep(2000);
 		System.out.println("==== Location Selected Successful ====");
 		
 	}

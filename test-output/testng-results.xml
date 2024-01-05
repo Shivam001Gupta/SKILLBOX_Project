@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-30T10:32:31 IST" name="Default suite" finished-at="2023-12-30T10:33:34 IST" duration-ms="63584">
+  <suite started-at="2024-01-05T17:12:25 IST" name="Default suite" finished-at="2024-01-05T17:18:36 IST" duration-ms="370846">
     <groups>
     </groups>
-    <test started-at="2023-12-30T10:32:31 IST" name="Default test" finished-at="2023-12-30T10:33:34 IST" duration-ms="63584">
-      <class name="skillbox.EventBookTest.PaidEventBookTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@673be18f]" started-at="2023-12-30T10:32:31 IST" name="bsConfig" finished-at="2023-12-30T10:32:31 IST" duration-ms="17" status="PASS">
+    <test started-at="2024-01-05T17:12:25 IST" name="Default test" finished-at="2024-01-05T17:18:36 IST" duration-ms="370846">
+      <class name="skillbox.AlllPagesTest.AllTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:skillbox.AlllPagesTest.AllTest@13ad5cd3]" started-at="2024-01-05T17:12:25 IST" name="bsConfig" finished-at="2024-01-05T17:12:25 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@673be18f]" started-at="2023-12-30T10:32:31 IST" name="bcConfig" finished-at="2023-12-30T10:32:36 IST" duration-ms="5168" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:skillbox.AlllPagesTest.AllTest@13ad5cd3]" started-at="2024-01-05T17:12:25 IST" name="bcConfig" finished-at="2024-01-05T17:12:34 IST" duration-ms="9117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@673be18f]" started-at="2023-12-30T10:32:36 IST" name="bmConfig" finished-at="2023-12-30T10:32:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.AlllPagesTest.AllTest@13ad5cd3]" started-at="2024-01-05T17:12:34 IST" name="bmConfig" finished-at="2024-01-05T17:12:34 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="eventbook()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@673be18f]" started-at="2023-12-30T10:32:36 IST" name="eventbook" finished-at="2023-12-30T10:33:34 IST" duration-ms="58041" status="PASS">
+        <test-method signature="creatediy()[pri:0, instance:skillbox.AlllPagesTest.AllTest@13ad5cd3]" started-at="2024-01-05T17:12:35 IST" name="creatediy" finished-at="2024-01-05T17:18:36 IST" duration-ms="361296" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- eventbook -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@673be18f]" started-at="2023-12-30T10:33:34 IST" name="amConfig" finished-at="2023-12-30T10:33:34 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- creatediy -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.AlllPagesTest.AllTest@13ad5cd3]" started-at="2024-01-05T17:18:36 IST" name="amConfig" finished-at="2024-01-05T17:18:36 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@673be18f]" started-at="2023-12-30T10:33:34 IST" name="acConfig" finished-at="2023-12-30T10:33:34 IST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.AlllPagesTest.AllTest@13ad5cd3]" started-at="2024-01-05T17:18:36 IST" name="acConfig" finished-at="2024-01-05T17:18:36 IST" duration-ms="314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@673be18f]" started-at="2023-12-30T10:33:34 IST" name="asConfig" finished-at="2023-12-30T10:33:34 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:skillbox.AlllPagesTest.AllTest@13ad5cd3]" started-at="2024-01-05T17:18:36 IST" name="asConfig" finished-at="2024-01-05T17:18:36 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- skillbox.EventBookTest.PaidEventBookTest -->
+      </class> <!-- skillbox.AlllPagesTest.AllTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
