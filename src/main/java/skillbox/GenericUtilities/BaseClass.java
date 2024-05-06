@@ -3,6 +3,7 @@ package skillbox.GenericUtilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -49,7 +50,9 @@ public class BaseClass {
 		String URL = pUtil.getDataFromPropertyFile("url");
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			ChromeOptions option = new ChromeOptions();
+			option.setBinary("/Users/Apple/git/SKILLBOX_Project/src/main/resources/chromedriver");
+//			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			System.out.println(BROWSER + " === Browser launched ===");
 
@@ -63,7 +66,8 @@ public class BaseClass {
 			driver = new EdgeDriver();
 			System.out.println(BROWSER + " === Browser launched ===");
 			
-		} else if (BROWSER.equalsIgnoreCase("safari")) {
+		} else if (BROWSER.equalsIgnoreCase("safari"))
+		{
 			WebDriverManager.safaridriver().setup();
 			driver = new SafariDriver();
 			System.out.println(BROWSER + " === Browser launched ===");
@@ -100,6 +104,7 @@ public class BaseClass {
 		System.out.println("=== Operation Completed Successful ====");
 	}
 		
+	
 //	@BeforeTest
 	@AfterClass(alwaysRun = true)
 	public void acConfig()

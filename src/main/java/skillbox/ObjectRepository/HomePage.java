@@ -82,7 +82,27 @@ public class HomePage extends WebDriverUtility {
 	
 	@FindBy(linkText="Manage DIY Event")
 	private WebElement manageDiyEventClk;
+	
+	@FindBy(xpath ="//*[text()='Profile']")
+	private WebElement profile;
 		
+	@FindBy(xpath="//a[@class='icon-search search_header']")
+	private WebElement searchclk;
+	
+	@FindBy(xpath="//input[@placeholder='Events, artists or celebrities']")
+	private WebElement searchedt;
+	
+	@FindBy(linkText="Manage Sales")
+	private WebElement manageSalesClk;
+	
+	
+	
+
+	
+
+	
+
+
 	public HomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -192,6 +212,24 @@ public class HomePage extends WebDriverUtility {
 		return manageDiyEventClk;
 	}
 	
+	public WebElement getProfile() {
+		return profile;
+	}
+	
+	public WebElement getSearchclk() {
+		return searchclk;
+	}
+
+
+	public WebElement getSearchedt() {
+		return searchedt;
+	}
+	
+	public WebElement getManageSalesClk() {
+		return manageSalesClk;
+	}
+
+	
 	public void logoutOfApp (WebDriver driver) throws Throwable
 	{
 		dropDownMenuLink.click();
@@ -293,6 +331,28 @@ public class HomePage extends WebDriverUtility {
 		Thread.sleep(2000);
 		manageDiyEventClk.click();
 		
+	}
+	
+	public void selectUpdateWork(WebDriver driver)throws InterruptedException
+	{
+		dropDownMenuLink.click();
+		Thread.sleep(2000);
+		profile.click();
+	}
+	
+	public void searchEvent(WebDriver driver, String eventName) throws InterruptedException
+	{
+		searchclk.click();
+		Thread.sleep(5000);
+		searchedt.sendKeys(eventName);
+		
+	}
+	
+	public void selectmangesales(WebDriver driver)throws InterruptedException
+	{
+		dropDownMenuLink.click();
+		Thread.sleep(2000);
+		manageSalesClk.click();
 	}
 	
 	
