@@ -67,6 +67,20 @@ public class FeedsPage extends WebDriverUtility{
 	@FindBy(xpath="//div[@class='ant-message']/nz-message")
 	private WebElement succesmsg;
 	
+	@FindBy(xpath="//input[@formcontrolname='title']")
+	private WebElement titleedtprofile;
+	
+	@FindBy(xpath="//textarea[@formcontrolname='description']")
+	private WebElement deescriptionedtprofile;
+	
+	@FindBy(xpath="//button[text()='Upload Audio']")
+	private WebElement uploadBtnprofile;
+	
+	
+
+
+	
+
 	public FeedsPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -150,6 +164,17 @@ public class FeedsPage extends WebDriverUtility{
 		return succesmsg;
 	}
 	
+	public WebElement getTitleedtprofile() {
+		return titleedtprofile;
+	}
+
+	public WebElement getDeescriptionedtprofile() {
+		return deescriptionedtprofile;
+	}
+	
+	public WebElement getUploadBtnprofile() {
+		return uploadBtnprofile;
+	}
 	
 	public void delete() throws InterruptedException
 	 {
@@ -289,6 +314,35 @@ public class FeedsPage extends WebDriverUtility{
 		
 	}
 	
+	/**
+	 * This method is used to Post Audio on Feeds
+	 * @param driver
+	 * @param tags
+	 * @param language
+	 * @throws Throwable
+	 */
+	public void uploadWork(WebDriver driver, String tags, String language) throws Throwable
+	{
+		Thread.sleep(2000);
+		titleedtprofile.sendKeys("The Title of Post Text");
+		deescriptionedtprofile.sendKeys("The description of post Description");
+		Thread.sleep(2000);
+		imgUpload.sendKeys(IConstants.imageFilePath);
+		Thread.sleep(5000);
+		imgSaveBtn.click();
+		tagClk.click();
+		selectItemFromList(driver, tags, listItems);
+		escapeClickAction(driver);
+		lngClk.click();
+		selectItemFromList(driver, language, listItems);
+		escapeClickAction(driver);
+		audioUpload.sendKeys(IConstants.audioFilePath);
+		waitForElementToBeClickable(driver, uploadBtnprofile);
+		Thread.sleep(2000);
+		uploadBtnprofile.click();
+		
+		
+	}
 	
 	
 	
