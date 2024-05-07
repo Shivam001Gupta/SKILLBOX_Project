@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-06T19:10:12 IST" name="Default suite" finished-at="2024-05-06T19:11:03 IST" duration-ms="51057">
+  <suite started-at="2024-05-07T14:47:59 IST" name="Default suite" finished-at="2024-05-07T14:48:53 IST" duration-ms="54238">
     <groups>
     </groups>
-    <test started-at="2024-05-06T19:10:12 IST" name="Default test" finished-at="2024-05-06T19:11:03 IST" duration-ms="51057">
-      <class name="skillbox.ProfileMediaUpload.ProfileUploadTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:skillbox.ProfileMediaUpload.ProfileUploadTest@146dfe6]" started-at="2024-05-06T19:10:12 IST" name="bsConfig" finished-at="2024-05-06T19:10:12 IST" duration-ms="13" status="PASS">
+    <test started-at="2024-05-07T14:47:59 IST" name="Default test" finished-at="2024-05-07T14:48:53 IST" duration-ms="54238">
+      <class name="skillbox.EventBookTest.DonationEventBookTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:skillbox.EventBookTest.DonationEventBookTest@78641d23]" started-at="2024-05-07T14:47:59 IST" name="bsConfig" finished-at="2024-05-07T14:47:59 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:skillbox.ProfileMediaUpload.ProfileUploadTest@146dfe6]" started-at="2024-05-06T19:10:12 IST" name="bcConfig" finished-at="2024-05-06T19:10:20 IST" duration-ms="8411" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:skillbox.EventBookTest.DonationEventBookTest@78641d23]" started-at="2024-05-07T14:47:59 IST" name="bcConfig" finished-at="2024-05-07T14:48:07 IST" duration-ms="8404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.ProfileMediaUpload.ProfileUploadTest@146dfe6]" started-at="2024-05-06T19:10:20 IST" name="bmConfig" finished-at="2024-05-06T19:10:20 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.DonationEventBookTest@78641d23]" started-at="2024-05-07T14:48:07 IST" name="bmConfig" finished-at="2024-05-07T14:48:07 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="profileUpload()[pri:0, instance:skillbox.ProfileMediaUpload.ProfileUploadTest@146dfe6]" started-at="2024-05-06T19:10:20 IST" name="profileUpload" finished-at="2024-05-06T19:11:03 IST" duration-ms="42296" status="PASS">
+        <test-method signature="donationeventbook()[pri:0, instance:skillbox.EventBookTest.DonationEventBookTest@78641d23]" started-at="2024-05-07T14:48:07 IST" name="donationeventbook" finished-at="2024-05-07T14:48:53 IST" duration-ms="45514" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- profileUpload -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.ProfileMediaUpload.ProfileUploadTest@146dfe6]" started-at="2024-05-06T19:11:03 IST" name="amConfig" finished-at="2024-05-06T19:11:03 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- donationeventbook -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.DonationEventBookTest@78641d23]" started-at="2024-05-07T14:48:53 IST" name="amConfig" finished-at="2024-05-07T14:48:53 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.ProfileMediaUpload.ProfileUploadTest@146dfe6]" started-at="2024-05-06T19:11:03 IST" name="acConfig" finished-at="2024-05-06T19:11:03 IST" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.DonationEventBookTest@78641d23]" started-at="2024-05-07T14:48:53 IST" name="acConfig" finished-at="2024-05-07T14:48:53 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:skillbox.ProfileMediaUpload.ProfileUploadTest@146dfe6]" started-at="2024-05-06T19:11:03 IST" name="asConfig" finished-at="2024-05-06T19:11:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:skillbox.EventBookTest.DonationEventBookTest@78641d23]" started-at="2024-05-07T14:48:53 IST" name="asConfig" finished-at="2024-05-07T14:48:53 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- skillbox.ProfileMediaUpload.ProfileUploadTest -->
+      </class> <!-- skillbox.EventBookTest.DonationEventBookTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
