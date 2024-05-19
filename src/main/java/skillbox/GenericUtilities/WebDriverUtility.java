@@ -43,7 +43,7 @@ public class WebDriverUtility {
 	}
 	
 	/**
-	 * This Method is used to GenerateRandomNumber
+	 * This Method is used to Generate Random Alphabet
 	 */
 	public void Random(WebDriver driver)
 	{

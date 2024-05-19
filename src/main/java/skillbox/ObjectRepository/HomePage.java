@@ -96,9 +96,17 @@ public class HomePage extends WebDriverUtility {
 	private WebElement manageSalesClk;
 	
 	
+	@FindBy(linkText="Transactions")
+	private WebElement transactionsclk;
+	
+	
+	
 	
 
 	
+
+	
+
 
 	
 
@@ -228,6 +236,10 @@ public class HomePage extends WebDriverUtility {
 	public WebElement getManageSalesClk() {
 		return manageSalesClk;
 	}
+	
+	public WebElement getTransactionsclk() {
+		return transactionsclk;
+	}
 
 	
 	public void logoutOfApp (WebDriver driver) throws Throwable
@@ -354,6 +366,15 @@ public class HomePage extends WebDriverUtility {
 		Thread.sleep(2000);
 		manageSalesClk.click();
 	}
+	
+	public void selectTransaction(WebDriver driver)throws InterruptedException
+	{
+		dropDownMenuLink.click();
+		Thread.sleep(2000);
+		transactionsclk.click();
+	}
+	
+	
 	
 	
 

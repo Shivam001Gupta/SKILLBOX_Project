@@ -31,9 +31,7 @@ public class ProfileUploadTest extends BaseClass{
 		String succesmsg = fp.getSuccesmsg().getText();
 		Assert.assertTrue(succesmsg.contains("Success"));
 		System.out.println(succesmsg);
-		
-		
-		
+				
 		
 	}
 

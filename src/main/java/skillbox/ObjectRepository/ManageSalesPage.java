@@ -18,16 +18,16 @@ public class ManageSalesPage extends WebDriverUtility{
 	@FindBy(linkText="View Details")
 	private WebElement viewDetailsClk;
 	
-	@FindBy(xpath="(//div[@class='card-body'])[1]/h4")
+	@FindBy(xpath="(//div[@class='card-body'])[2]/h4")
 	private WebElement totalTicketText;
 	
-	@FindBy(xpath="(//div[@class='card-body'])[2]/h4")
+	@FindBy(xpath="(//div[@class='card-body'])[5]/h4")
 	private WebElement totalOrderText;
-	
-	@FindBy(xpath="(//div[@class='card-body'])[4]/h4")
+		
+	@FindBy(xpath="(//div[@class='card-body'])[1]/h4")
 	private WebElement totalSaleInrText;
 	
-	@FindBy(xpath="(//div[@class='card-body'])[8]/h4")
+	@FindBy(xpath="(//div[@class='card-body'])[3]/h4")
 	private WebElement totalAllowinText;
 	
 	

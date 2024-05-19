@@ -16,7 +16,17 @@ public class EventListingPage extends WebDriverUtility {
 	
 	@FindBy(xpath="//div[@class='event-result-box']/div[2]/h2")
 	private List<WebElement> eventName;
+	
+	@FindBy(linkText="Poetry Events")
+	private WebElement categoryClk;
+	
+	
+	
+	
+	
 		
+	
+
 	public EventListingPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -30,10 +40,23 @@ public class EventListingPage extends WebDriverUtility {
 		return eventName;
 	}
 	
+	public WebElement getCategory() {
+		return categoryClk;
+	}
+	
 	public void selectEventFromList(WebDriver driver, String eventname)
 	{
 		waitForElementToBeVisible(driver, eventListFind);
 		selectItemFromList(driver, eventname , eventName);
+		
+	}
+	
+	public void selectCategory(WebDriver driver)
+	{
+		categoryClk.click();
+		waitForElementToBeVisible(driver, eventListFind);
+		
+		
 		
 	}
 	

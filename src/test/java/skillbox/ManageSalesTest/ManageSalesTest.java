@@ -1,5 +1,6 @@
 package skillbox.ManageSalesTest;
 
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,12 +18,10 @@ public class ManageSalesTest extends BaseClass {
 		
 		hp.loginUser(driver, "guptashivam1711@gmail.com", "12345678");
 		hp.selectmangesales(driver);
-		
-		
-		
+				
 		//Get Event From Manage Sales
 		ManageSalesPage mnp = new ManageSalesPage(driver);
-		mnp.searchEvent(driver, "Skillbox Paid Event KT (INR 100 - 10000)");
+		mnp.searchEvent(driver, "Skillbox Paid Event KT (INR 100 - 10000) " +Keys.BACK_SPACE);
 		
 		String succesmsg = mnp.getDownloadCsv().getText();
 		Assert.assertTrue(succesmsg.contains("CSV"));
@@ -30,7 +29,4 @@ public class ManageSalesTest extends BaseClass {
 		
 	  }
 	
-	
-	
-
 }
