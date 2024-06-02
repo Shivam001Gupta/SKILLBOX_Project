@@ -19,6 +19,13 @@ public class CreateDiyTest extends BaseClass {
 		CreateListingPage clp = new CreateListingPage(driver);
 		clp.fillDiyForm(driver, "New Delhi");
 		
+		//Create Artist
+		clp.createArtist(driver, "Hercules" ,  "The BIo is main thing");
+
+		//Create Partner
+		clp.createPartner(driver, "ParGeneric" ,  "The BIo is main thing");
+		
+		
 		//Create Paid Ticket
 		clp.createTicket(driver, "Early Bird");
 		

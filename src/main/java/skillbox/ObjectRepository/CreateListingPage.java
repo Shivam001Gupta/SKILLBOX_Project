@@ -134,7 +134,67 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//input[@formcontrolname='secondLabel']")
 	private WebElement secondLabelEdt;
 	
+	@FindBy(xpath="//button[text()=' Artist ']")
+	private WebElement artistClk;
 	
+	@FindBy(xpath="//input[@placeholder='Search Artist']")
+	private WebElement searchArtist;
+	
+	@FindBy(xpath="//div[text()='Other']/..")
+	private WebElement otherClk;
+	
+	@FindBy(xpath="//input[@placeholder='Enter Artist Name']")
+	private WebElement artistName;
+	
+	@FindBy(xpath="//textarea[@placeholder='Enter Artist Name']")
+	private WebElement artistBio;
+	
+	@FindBy(xpath="//label[text()='Artist Image']/../input[1]")
+	private WebElement Artistimg;
+	
+	@FindBy(xpath="//span[text()=' OK ']/..")
+	private WebElement ArtistimgBtn;
+	
+	@FindBy(xpath="//button[text()='Add Artist']")
+	private WebElement addArtistBtn;
+	
+	@FindBy(xpath="//div[@class='g_srch_item ng-star-inserted']")
+	private List<WebElement> listOther;
+	
+	@FindBy(xpath="//div[@class='ant-message']/nz-message")
+	private WebElement succesmsg;
+	
+	@FindBy(xpath="//label[text()='Partner Image']/../input[1]")
+	private WebElement partnerimg;
+	
+	
+
+
+
+
+	@FindBy(xpath="//button[text()=' Partners ']")
+	private WebElement partnersclk;
+	
+	@FindBy(xpath="//input[@placeholder='Search Partner']")
+	private WebElement searchPartner;
+	
+	@FindBy(xpath="//input[@placeholder='Enter Partner Name']")
+	private WebElement partnerName;
+	
+	@FindBy(xpath="//textarea[@placeholder='Enter Partner Bio']")
+	private WebElement partnerBio;
+	
+	@FindBy(xpath="//button[text()='Add Partner']")
+	private WebElement addPartnerBtn;
+	
+	
+	
+	
+	
+	
+
+	
+
 	public CreateListingPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -304,7 +364,66 @@ public class CreateListingPage extends WebDriverUtility {
 	public WebElement getSecondLabel() {
 		return secondLabelEdt;
 	}
+	
+	public WebElement getArtistClk() {
+		return artistClk;
+	}
 
+	public WebElement getOtherClk() {
+		return otherClk;
+	}
+
+	public WebElement getArtistName() {
+		return artistName;
+	}
+
+	public WebElement getArtistBio() {
+		return artistBio;
+	}
+
+	public WebElement getArtistimg() {
+		return Artistimg;
+	}
+
+	public WebElement getArtistimgBtn() {
+		return ArtistimgBtn;
+	}
+
+	public WebElement getAddArtistBtn() {
+		return addArtistBtn;
+	}
+	
+	public List<WebElement> getListOther() {
+		return listOther;
+	}
+	
+	public WebElement getSuccesmsg() {
+		return succesmsg;
+	}
+	
+	public WebElement getPartnerimg() {
+		return partnerimg;
+	}
+	
+	public WebElement getPartnersclk() {
+		return partnersclk;
+	}
+
+	public WebElement getSearchPartner() {
+		return searchPartner;
+	}
+
+	public WebElement getPartnerName() {
+		return partnerName;
+	}
+
+	public WebElement getPartnerBio() {
+		return partnerBio;
+	}
+
+	public WebElement getAddPartnerBtn() {
+		return addPartnerBtn;
+	}
 
 
 	
@@ -368,9 +487,66 @@ public class CreateListingPage extends WebDriverUtility {
 		
 	}
 	
+	public void createArtist(WebDriver driver, String ArtistName, String ArtistBio) throws Throwable
+	{
+		waitForElementToBeVisible(driver, artistClk);
+		Thread.sleep(2000);
+		artistClk.click();
+		Thread.sleep(2000);
+		searchArtist.sendKeys("Other");
+		Thread.sleep(2000);
+		selectItemFromList(driver, "Other", listOther);
+		Thread.sleep(2000);
+		artistName.sendKeys(ArtistName);
+		artistBio.sendKeys(ArtistBio);
+		Artistimg.sendKeys(IConstants.imageFilePath);
+		Thread.sleep(5000);
+		ArtistimgBtn.click();
+		Thread.sleep(5000);
+		addArtistBtn.click();
+		waitForElementToBeVisible(driver, succesmsg);
+		System.out.println(succesmsg.getText());
+		Thread.sleep(2000);
+
+		
+		
+	}
+	
+	
+	public void createPartner(WebDriver driver, String PartnerName, String PartnerBio) throws Throwable
+	{
+		
+		partnersclk.click();
+		Thread.sleep(2000);
+		searchPartner.sendKeys("Other");
+		Thread.sleep(2000);
+		selectItemFromList(driver, "Other", listOther);
+		Thread.sleep(2000);
+		partnerName.sendKeys(PartnerName);
+		partnerBio.sendKeys(PartnerBio);
+		partnerimg.sendKeys(IConstants.imageFilePath);
+		Thread.sleep(5000);
+		ArtistimgBtn.click();
+		Thread.sleep(5000);
+		addPartnerBtn.click();
+		waitForElementToBeVisible(driver, succesmsg);
+		System.out.println(succesmsg.getText());
+		scrollAction(driver);
+		Thread.sleep(2000);
+
+		
+		
+	}
+	
+	
+	
+	
+
+
+
 	public void createTicket(WebDriver driver, String ticketname ) throws Throwable
 	{
-		waitForElementToBeVisible(driver, selectTicketSection);
+//		waitForElementToBeVisible(driver, selectTicketSection);
 		Thread.sleep(2000);
 		selectTicketSection.click();
 		waitForElementToBeVisible(driver, paidTicketClk);
@@ -385,6 +561,8 @@ public class CreateListingPage extends WebDriverUtility {
 		ticketEnableBtn.click();
 		
 	}
+	
+	
 	
 	public void createFreeTicket(WebDriver driver, String ticketname ) throws Throwable
 	{

@@ -18,7 +18,7 @@ public class SignUpBusinessTest extends BaseClass {
 	    
 	    //Complete Business Profile
 	    ProfileSettingPage psp = new ProfileSettingPage(driver);
-	    psp.profileCompleteBusiness(driver,"India", "Allahabad","Kids");
+	    psp.profileCompleteBusiness(driver,"India", "Allahabad","Tech-House");
 	   
 	    String succesmsg = psp.getSuccesmsg().getText();
 		Assert.assertTrue(succesmsg.contains("successfully"));

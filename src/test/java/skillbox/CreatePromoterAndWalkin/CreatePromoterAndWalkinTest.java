@@ -39,5 +39,3 @@ public class CreatePromoterAndWalkinTest extends BaseClass {
 	
 
 }
-
-

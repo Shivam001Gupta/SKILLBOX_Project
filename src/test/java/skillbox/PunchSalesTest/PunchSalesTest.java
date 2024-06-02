@@ -1,4 +1,5 @@
 package skillbox.PunchSalesTest;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import skillbox.GenericUtilities.BaseClass;
@@ -31,6 +32,10 @@ public class PunchSalesTest extends BaseClass {
 		
             //Bulk Punch Sales
 			psp.bulkPunchSales(driver);
+			
+			String succesmsg = psp.getSaleEntryVerify().getText();
+			Assert.assertTrue(succesmsg.contains("Shubham"));
+			System.out.println(succesmsg);
 			
         	
         	       

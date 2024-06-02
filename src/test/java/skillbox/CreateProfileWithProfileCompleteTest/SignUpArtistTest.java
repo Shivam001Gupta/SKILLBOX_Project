@@ -18,7 +18,7 @@ class SignUpArtistTest extends BaseClass {
 		
 		//Complete Artist Profile
 		ProfileSettingPage psp = new ProfileSettingPage(driver);
-		psp.profileCompleteArtist(driver,"Ancotr", "India", "Allahabad", "Kids");
+		psp.profileCompleteArtist(driver,"Ancotr", "India", "Allahabad", "Tech-House");
 		
 		String succesmsg = psp.getSuccesmsg().getText();
 		Assert.assertTrue(succesmsg.contains("successfully"));

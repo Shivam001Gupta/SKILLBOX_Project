@@ -37,8 +37,8 @@ public class PaidEventBookTest extends BaseClass {
         ebp.loginOnEventBook(driver,"artist420@gmail.com", "12345678");
         System.out.println("Login Successfully");
         
-        //Signin on Event Booking Page
-        ebp.signupOnEventBook(driver, "GIRT", "9898801029", "12345678");
+        //SignIn on Event Booking Page
+        ebp.signupOnEventBook(driver, "MNPO", "9898801029", "12345678");
 		
         //Put Coupon on Event Booking Page
         ebp.couponModelEventBook(driver, "SBR24ZMKNB", "SBR24ZMKNB", "SBR24ZMKNB", "COUPONLPP");
@@ -53,11 +53,8 @@ public class PaidEventBookTest extends BaseClass {
         String succesmsg = epp.getEventSBCode().getText();
 		Assert.assertTrue(succesmsg.contains("Order No:"));
 		System.out.println(succesmsg);
-        
-        
-        
-          
-        
+               
+         
 
 	}
 }

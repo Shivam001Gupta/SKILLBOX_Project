@@ -57,6 +57,13 @@ public class PunchSalesPage extends WebDriverUtility {
 	@FindBy(xpath="//button[text()=' Submit ']")
 	private WebElement submitBulkPunchBtn;
 	
+	@FindBy(xpath="//td[text()='Shubham Gupta']")
+	private WebElement saleEntryVerify;
+	
+	
+	
+	
+
 	public PunchSalesPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -133,6 +140,9 @@ public class PunchSalesPage extends WebDriverUtility {
 		return submitBulkPunchBtn;
 	}
 
+	public WebElement getSaleEntryVerify() {
+		return saleEntryVerify;
+	}
 	
 	public void punchSalesForm(WebDriver driver, String fullname, String email, String mobilenumber, String ticketname, String amount, String noofticket) throws InterruptedException
 	{
@@ -169,6 +179,7 @@ public class PunchSalesPage extends WebDriverUtility {
 		bulkPunchUpload.sendKeys(IConstants.bulkPunchSalesFilePath);
 		Thread.sleep(3000);
 		submitBulkPunchBtn.click();
+		Thread.sleep(5000);
 	}
 	
 	
