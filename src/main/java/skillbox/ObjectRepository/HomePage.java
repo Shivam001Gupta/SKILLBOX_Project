@@ -1,5 +1,4 @@
 package skillbox.ObjectRepository;
-
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -277,7 +276,7 @@ public class HomePage extends WebDriverUtility {
 		signUpLnk.click();
 		nameEdt.sendKeys(name);
 		String c = RandomStringUtils.randomAlphabetic(7);
-		emailEdt.sendKeys(c+"@gmail.com");
+		emailEdt.sendKeys(c+"@ghel.com");
 		mobileEdt.sendKeys(mobile);
 		passwordEdt.sendKeys(password);		
 	}

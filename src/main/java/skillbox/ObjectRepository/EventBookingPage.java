@@ -36,7 +36,7 @@ public class EventBookingPage extends WebDriverUtility {
 	private WebElement mobileOnEventBookEdt;
 		
 	@FindBy(xpath="//a[@data-target='#couponModal']")
-	private WebElement couponDiscount;
+	private WebElement couponDiscount;	
 	
 	@FindBy(xpath="//input[@placeholder='Have a Promo Code?']")
 	private WebElement couponCodeonEventBookEdt;
@@ -68,7 +68,29 @@ public class EventBookingPage extends WebDriverUtility {
 	@FindBy(xpath="//*[text()=' Confirm ']/..")
 	private WebElement acceptCovidguidelines;
 	
+	@FindBy(xpath="//p[@data-target='#formQuestionModal']")
+	private WebElement addGuestBtn;
 	
+	@FindBy(xpath="(//input[@placeholder='Your Name'])[2]")
+	private WebElement nameGuestEdt;
+	
+	@FindBy(xpath="(//input[@placeholder='Email address'])[2]")
+	private WebElement emailGuestEdt;
+	
+	@FindBy(xpath="//span[text()='Male']")
+	private WebElement genderRadioGuest;
+	
+	@FindBy(xpath="//span[text()='Burger']")
+	private WebElement checkBoxGuest;
+	
+	@FindBy(xpath="//button[text()='Save ']")
+	private WebElement guestSaveBtn;
+	
+	
+	
+	
+	
+
 	public EventBookingPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -146,6 +168,31 @@ public class EventBookingPage extends WebDriverUtility {
 		return freeTicketConfirmationMsg;
 	}
 	
+	public WebElement getAddGuestBtn() {
+		return addGuestBtn;
+	}
+
+	public WebElement getGenderRadioGuest() {
+		return genderRadioGuest;
+	}
+
+	public WebElement getCheckBoxGuest() {
+		return checkBoxGuest;
+	}
+	
+	public WebElement getGuestSaveBtn() {
+		return guestSaveBtn;
+	}
+
+	
+	public WebElement getNameGuestEdt() {
+		return nameGuestEdt;
+	}
+
+	public WebElement getEmailGuestEdt() {
+		return emailGuestEdt;
+	}
+
 	public void loginOnEventBook(WebDriver driver, String email, String password ) throws Throwable
 	{
 		waitForElementToBeVisible(driver, emailOnEventBook);
@@ -232,6 +279,28 @@ public class EventBookingPage extends WebDriverUtility {
 		Thread.sleep(2000);
 		
 	}
+	
+	public void addGuestConfirm(WebDriver driver, String email, String name, String number) throws Throwable
+	{
+		addGuestBtn.click();
+		Thread.sleep(3000);
+		emailGuestEdt.sendKeys(email);				
+		nameGuestEdt.sendKeys(name);
+		mobileOnEventBookEdt.sendKeys(number);
+		Thread.sleep(2000);
+		genderRadioGuest.click();
+		Thread.sleep(2000);
+		checkBoxGuest.click();
+		Thread.sleep(2000);
+		guestSaveBtn.click();
+		
+		
+
+	}
+	
+	
+	
+	
 	 
     
 	   

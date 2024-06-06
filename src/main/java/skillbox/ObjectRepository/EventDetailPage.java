@@ -12,6 +12,12 @@ public class EventDetailPage extends WebDriverUtility {
 	@FindBy(xpath ="//a[@class='btn btn-primary d-block ng-star-inserted']")
 	private WebElement bookBtnLnk;	
 	
+	@FindBy(xpath ="//button[@class='d-block btn btn-outline-primary btn-block mr-4 ng-star-inserted']")
+	private WebElement bookBtnSeat;
+	
+	
+	
+	
 	
 	
 	
@@ -24,12 +30,25 @@ public class EventDetailPage extends WebDriverUtility {
 		return bookBtnLnk;
 	}
 	
+	public WebElement getBookBtnSeat() {
+		return bookBtnSeat;
+	}
+	
+	
 	public void clickbooknowbtn(WebDriver driver) throws InterruptedException
 	{
 		waitForElementToBeVisible(driver, bookBtnLnk);
 		bookBtnLnk.click();
 		Thread.sleep(5000);
 	}
+	
+	public void clickbooknowbtnseat(WebDriver driver) throws InterruptedException
+	{
+		waitForElementToBeVisible(driver, bookBtnSeat);
+		bookBtnSeat.click();
+		Thread.sleep(5000);
+	}
+
 	
 	
 	
