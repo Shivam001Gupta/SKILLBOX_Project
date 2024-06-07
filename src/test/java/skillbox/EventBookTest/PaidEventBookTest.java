@@ -32,13 +32,14 @@ public class PaidEventBookTest extends BaseClass {
         EventTicketPage etp = new EventTicketPage(driver);
         etp.selectTicket("1");
         
-        //Login on Event Booking Page
-        EventBookingPage ebp = new EventBookingPage(driver);
-        ebp.loginOnEventBook(driver,"artist420@gmail.com", "12345678");
-        System.out.println("Login Successfully");
-        
         //SignIn on Event Booking Page
+        EventBookingPage ebp = new EventBookingPage(driver);
         ebp.signupOnEventBook(driver, "MNPO", "9898801029", "12345678");
+      
+        //Login on Event Booking Page              
+        ebp.loginOnEventBook(driver,"shivam@skillboxes.com", "12345678");
+        System.out.println("Login Successfully");
+              
 		
         //Put Coupon on Event Booking Page
         ebp.couponModelEventBook(driver, "SBR24ZMKNB", "SBR24ZMKNB", "SBR24ZMKNB", "COUPONLPP");

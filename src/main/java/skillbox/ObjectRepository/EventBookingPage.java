@@ -204,15 +204,13 @@ public class EventBookingPage extends WebDriverUtility {
 		Thread.sleep(2000);
 		passwordOnEventBookEdt.sendKeys(password);
 		eventBookCntbtn.click();
-		
-		
-		
+				
 	}
 	
 	
 	public void signupOnEventBook(WebDriver driver, String name, String number, String password) throws Throwable
 	{
-		signOutFromEventBook.click();
+		
 		waitForElementToBeVisible(driver, emailOnEventBook);
 		Thread.sleep(2000);
 		String c = RandomStringUtils.randomAlphabetic(7);
@@ -224,6 +222,7 @@ public class EventBookingPage extends WebDriverUtility {
 		mobileOnEventBookEdt.sendKeys(number);
 		createPasswordOnEventBookEdt.sendKeys(password);
 		eventBookCntbtn.click();
+		signOutFromEventBook.click();
 	
 	}
 	
