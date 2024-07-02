@@ -20,17 +20,7 @@ public class SeatSectionPage extends WebDriverUtility {
 	
 	@FindBy(xpath="//*[@id='GA']")
 	private WebElement gatkt;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 	
 	public SeatSectionPage(WebDriver driver)
 	{

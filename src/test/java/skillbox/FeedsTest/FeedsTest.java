@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.FeedsPage;
 import skillbox.ObjectRepository.HomePage;
-
+	
 public class FeedsTest extends BaseClass {
 	
 		@Test(priority = 1)

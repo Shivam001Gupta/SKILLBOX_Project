@@ -5,11 +5,11 @@ import org.testng.annotations.Test;
 import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.HomePage;
 import skillbox.ObjectRepository.PunchSalesPage;
-
+	
 public class PunchSalesTest extends BaseClass {
 	
 		
-		
+	
 		@Test
 		public void punchsale() throws Throwable{
 			
@@ -36,9 +36,7 @@ public class PunchSalesTest extends BaseClass {
 			String succesmsg = psp.getSaleEntryVerify().getText();
 			Assert.assertTrue(succesmsg.contains("Shubham"));
 			System.out.println(succesmsg);
-			
-        	
-        	       
-			
+				
+        				
 		}
 }

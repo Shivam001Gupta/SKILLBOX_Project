@@ -22,29 +22,29 @@ public class AllTest extends BaseClass
         Thread.sleep(5000);
         
         
-        
-        driver.get("https://www.sbmailer.com/wedding-packages");;
-        Thread.sleep(5000);
-        driver.navigate().refresh();
-        Thread.sleep(5000);
-
-        
-        driver.get("https://www.sbmailer.com/corporate-packages");;
-        Thread.sleep(5000);
-        driver.navigate().refresh();
-        Thread.sleep(5000);
-
-        
-        driver.get("https://www.sbmailer.com/private-event-packages");
-        Thread.sleep(5000);
-        driver.navigate().refresh();
-        Thread.sleep(5000);
-
-        
-        driver.get("https://www.sbmailer.com/venue-club-gig-packages");
-        Thread.sleep(5000);
-        driver.navigate().refresh();
-        Thread.sleep(5000);
+//        
+//        driver.get("https://www.sbmailer.com/wedding-packages");;
+//        Thread.sleep(5000);
+//        driver.navigate().refresh();
+//        Thread.sleep(5000);
+//
+//        
+//        driver.get("https://www.sbmailer.com/corporate-packages");;
+//        Thread.sleep(5000);
+//        driver.navigate().refresh();
+//        Thread.sleep(5000);
+//
+//        
+//        driver.get("https://www.sbmailer.com/private-event-packages");
+//        Thread.sleep(5000);
+//        driver.navigate().refresh();
+//        Thread.sleep(5000);
+//
+//        
+//        driver.get("https://www.sbmailer.com/venue-club-gig-packages");
+//        Thread.sleep(5000);
+//        driver.navigate().refresh();
+//        Thread.sleep(5000);
 
         
         driver.get("https://www.sbmailer.com/events");

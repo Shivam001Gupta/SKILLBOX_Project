@@ -5,7 +5,7 @@ import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.EventBookingPage;
 import skillbox.ObjectRepository.EventDetailPage;
 import skillbox.ObjectRepository.EventListingPage;
-import skillbox.ObjectRepository.EventPaymentPage;
+import skillbox.ObjectRepository.PaymentPage;
 import skillbox.ObjectRepository.EventTicketPage;
 import skillbox.ObjectRepository.HomePage;
 
@@ -48,7 +48,7 @@ public class PaidEventBookTest extends BaseClass {
         ebp.pinAndPay(driver, "231001");
         
         //Success page Generate
-        EventPaymentPage epp = new EventPaymentPage(driver);
+        PaymentPage epp = new PaymentPage(driver);
         epp.payAmountSuccess(driver);
         
         String succesmsg = epp.getEventSBCode().getText();

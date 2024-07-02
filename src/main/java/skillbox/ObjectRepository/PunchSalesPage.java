@@ -60,9 +60,23 @@ public class PunchSalesPage extends WebDriverUtility {
 	@FindBy(xpath="//td[text()='Shubham Gupta']")
 	private WebElement saleEntryVerify;
 	
+	@FindBy(xpath="(//button[text()='Send Mail'])[1]")
+	private WebElement sendMailBtn;
+	
+	@FindBy(xpath="(//button[text()='Yes'])[1]")
+	private WebElement yesBtn;
+	
+	@FindBy(xpath="//div[@class='ant-message']/nz-message")
+	private WebElement succesmsg;
+	
+	@FindBy(xpath="//*[@preserveAspectRatio='xMidYMid']")
+	private WebElement loader;
 	
 	
 	
+	
+	
+
 
 	public PunchSalesPage(WebDriver driver)
 	{
@@ -144,6 +158,22 @@ public class PunchSalesPage extends WebDriverUtility {
 		return saleEntryVerify;
 	}
 	
+	public WebElement getSendMailBtn() {
+		return sendMailBtn;
+	}
+
+	public WebElement getYesBtn() {
+		return yesBtn;
+	}
+	
+	public WebElement getSuccesmsg() {
+		return succesmsg;
+	}
+	
+	public WebElement getLoader() {
+		return loader;
+	}
+	
 	public void punchSalesForm(WebDriver driver, String fullname, String email, String mobilenumber, String ticketname, String amount, String noofticket) throws InterruptedException
 	{
 		waitForElementToBeVisible(driver, punchInSalesBtn);
@@ -169,7 +199,16 @@ public class PunchSalesPage extends WebDriverUtility {
 		Thread.sleep(2000);
 		selectItemFromList(driver, "Cash" , listItems);
 		addBtn.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		waitForElementToBeInvisible(driver, loader);		
+		Thread.sleep(2000);
+		sendMailBtn.click();
+		waitForElementToBeVisible(driver, yesBtn);
+		Thread.sleep(2000);
+		yesBtn.click();		
+		waitForElementToBeVisible(driver, succesmsg);
+		System.out.println(succesmsg.getText());
+		
 		
 	}
 	

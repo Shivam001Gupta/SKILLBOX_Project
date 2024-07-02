@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.EventBookingPage;
 import skillbox.ObjectRepository.EventDetailPage;
-import skillbox.ObjectRepository.EventPaymentPage;
+import skillbox.ObjectRepository.PaymentPage;
 import skillbox.ObjectRepository.EventTicketPage;
 
 public class DonationEventBookTest extends BaseClass {
@@ -32,7 +32,7 @@ public class DonationEventBookTest extends BaseClass {
 	      ebp.pinAndPay(driver, "231001");
 	      
 	      //Success page Generate
-	      EventPaymentPage epp = new EventPaymentPage(driver);
+	      PaymentPage epp = new PaymentPage(driver);
 	      epp.payAmountSuccess(driver);
 	      
 	      String succesmsg = epp.getEventSBCode().getText();
@@ -40,5 +40,4 @@ public class DonationEventBookTest extends BaseClass {
 		  System.out.println(succesmsg);
 	      
 	}
-
 }

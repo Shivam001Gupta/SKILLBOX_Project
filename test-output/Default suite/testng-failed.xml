@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="skillbox.EventBookTest.SupersonicEventWidget">
+      <class name="skillbox.EventBookTest.AddGuestEventBookTest">
         <methods>
           <include name="acConfig"/>
           <include name="bsConfig"/>
-          <include name="supersonicaddonevent"/>
+          <include name="addoneventbook"/>
           <include name="bmConfig"/>
           <include name="bcConfig"/>
           <include name="asConfig"/>
           <include name="amConfig"/>
         </methods>
-      </class> <!-- skillbox.EventBookTest.SupersonicEventWidget -->
+      </class> <!-- skillbox.EventBookTest.AddGuestEventBookTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

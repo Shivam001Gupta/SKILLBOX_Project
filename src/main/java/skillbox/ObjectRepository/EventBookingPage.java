@@ -86,11 +86,11 @@ public class EventBookingPage extends WebDriverUtility {
 	@FindBy(xpath="//button[text()='Save ']")
 	private WebElement guestSaveBtn;
 	
+	@FindBy(xpath="//*[@preserveAspectRatio='xMidYMid']")
+	private WebElement loader;
 	
 	
 	
-	
-
 	public EventBookingPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -192,6 +192,12 @@ public class EventBookingPage extends WebDriverUtility {
 	public WebElement getEmailGuestEdt() {
 		return emailGuestEdt;
 	}
+	
+	public WebElement getLoader() {
+		return loader;
+	}
+
+	
 
 	public void loginOnEventBook(WebDriver driver, String email, String password ) throws Throwable
 	{
@@ -204,6 +210,8 @@ public class EventBookingPage extends WebDriverUtility {
 		Thread.sleep(2000);
 		passwordOnEventBookEdt.sendKeys(password);
 		eventBookCntbtn.click();
+		Thread.sleep(9000);
+		
 				
 	}
 	
@@ -222,7 +230,9 @@ public class EventBookingPage extends WebDriverUtility {
 		mobileOnEventBookEdt.sendKeys(number);
 		createPasswordOnEventBookEdt.sendKeys(password);
 		eventBookCntbtn.click();
+		Thread.sleep(5000);
 		signOutFromEventBook.click();
+		Thread.sleep(5000);
 	
 	}
 	

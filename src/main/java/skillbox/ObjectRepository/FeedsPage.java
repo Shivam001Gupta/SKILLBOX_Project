@@ -82,23 +82,8 @@ public class FeedsPage extends WebDriverUtility{
 	@FindBy(xpath="(//button[@type='button'])[2]")
 	private WebElement payBtn;
 	
-	@FindBy(xpath="//div[@id='paymentButton']")
+	@FindBy(xpath="//button[@id='paymentButton']")
 	private WebElement finalpaybtn;
-	
-	@FindBy(xpath="(//input[@type='tel'])[2]")
-	private WebElement rzpmobno;
-	
-	@FindBy(xpath="//button[text()='Proceed']")
-	private WebElement rzpproceed;
-	
-	@FindBy(xpath="(//img[@src='https://cdn.razorpay.com/wallet-sq/phonepe.png'])[1]")
-	private WebElement phonepeClk;
-	
-	@FindBy(xpath="//button[text()='Pay Now']")
-	private WebElement finalPayNow;
-	
-	@FindBy(xpath="//button[text()='Success']")
-	private WebElement succcessBtn;
 	
 	@FindBy(xpath="(//h4[@_ngcontent-app-root-c31=''])[1]")
 	private WebElement rfSbCode;
@@ -211,7 +196,7 @@ public class FeedsPage extends WebDriverUtility{
 	public WebElement getEnterAmountEdt() {
 		return enterAmountEdt;
 	}
-
+	
 	public WebElement getPayBtn() {
 		return payBtn;
 	}
@@ -220,26 +205,6 @@ public class FeedsPage extends WebDriverUtility{
 		return finalpaybtn;
 	}
 
-	public WebElement getRzpmobno() {
-		return rzpmobno;
-	}
-
-	public WebElement getRzpproceed() {
-		return rzpproceed;
-	}
-	
-	public WebElement getPhonepeClk() {
-		return phonepeClk;
-	}
-
-	public WebElement getFinalPayNow() {
-		return finalPayNow;
-	}
-	
-	public WebElement getSucccessBtn() {
-		return succcessBtn;
-	}
-	
 	public WebElement getRfSbCode() {
 		return rfSbCode;
 	}
@@ -247,6 +212,7 @@ public class FeedsPage extends WebDriverUtility{
 	public WebElement getThumbicon() {
 		return thumbicon;
 	}
+	
 
 	
 	
@@ -418,43 +384,22 @@ public class FeedsPage extends WebDriverUtility{
 		
 	}
 	
-	public void payAmountSuccesspopup(WebDriver driver, String amount,String mob ) throws Throwable
+	public void enterAmount(WebDriver driver, String amount ) throws Throwable
 	{
-		
+	
 		enterAmountEdt.sendKeys(amount);
 		payBtn.click();
 		waitForElementToBeVisible(driver, finalpaybtn);
 		Thread.sleep(2000);
 		finalpaybtn.click();
-		Thread.sleep(6000);
-		driver.switchTo().frame(1);       
-		rzpmobno.sendKeys(mob);
-		rzpproceed.click();
-		Thread.sleep(3000);
-		phonepeClk.click();
-		Thread.sleep(2000);
-		finalPayNow.click();
-		Thread.sleep(2000);
-		swtichToWindow(driver, "razorpay");
-		succcessBtn.click();
-		swtichToWindow(driver, "sbmailer.com");
-		Thread.sleep(5000);
-		waitForElementToBeVisible(driver, rfSbCode);	
-		thumbicon.click();
-		Thread.sleep(2000);
 	
-		  
-		
-		
-		
-		
-		
-			
 	}
-
 	
-	
-	
+	public void rfsbcodewait(WebDriver driver) throws InterruptedException
+	{
+		waitForElementToBeVisible(driver, rfSbCode);	
+		Thread.sleep(2000);
+	}
 	
 	
 	

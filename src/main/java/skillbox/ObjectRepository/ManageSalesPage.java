@@ -31,8 +31,15 @@ public class ManageSalesPage extends WebDriverUtility{
 	
 	@FindBy(xpath="//button[text()= ' Download CSV']")
 	private WebElement downloadCsv;
+	
+	@FindBy(xpath="(//a[text()='Boost Sales'])[1]")
+	private WebElement boostSaleBtn;
+	
+	
 		
 
+
+	
 
 	public ManageSalesPage(WebDriver driver)
 	{
@@ -68,10 +75,18 @@ public class ManageSalesPage extends WebDriverUtility{
 		return downloadCsv;
 	}
 
+	public WebElement getBoostSaleBtn() {
+		return boostSaleBtn;
+	}
+
 	
 	
 
-	
+	/**
+	 * This Function is used to Search Event from Manage Sales
+	 * @param driver
+	 * @throws Throwable
+	 */
 	public void searchEvent(WebDriver driver, String eventname) throws Throwable
 	{
 	    waitForElementToBeVisible(driver, viewDetailsClk);
@@ -94,12 +109,23 @@ public class ManageSalesPage extends WebDriverUtility{
 
 		String totalAllow = totalAllowinText.getText();
 		System.out.println("Total Allow In\n"+totalAllow);
-		
-		
-		
+				
 					
 	}
-
+	
+	
+	/**
+	 * This Function is used to Select Boost Sales
+	 * @param driver
+	 * @throws Throwable
+	 */
+	public void selectBoostSale(WebDriver driver) throws Throwable
+	{
+	    waitForElementToBeVisible(driver, boostSaleBtn);
+		Thread.sleep(2000);
+		boostSaleBtn.click();
+							
+	}
 	
 
 	

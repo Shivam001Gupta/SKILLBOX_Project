@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.AddOnPage;
 import skillbox.ObjectRepository.EventBookingPage;
-import skillbox.ObjectRepository.EventPaymentPage;
+import skillbox.ObjectRepository.PaymentPage;
 import skillbox.ObjectRepository.EventTicketPage;
 
 public class SupersonicEventWidget extends BaseClass {
@@ -33,7 +33,7 @@ public class SupersonicEventWidget extends BaseClass {
           ebp.supersonicPay(driver);
           
           //Success page Generate  
-          EventPaymentPage epp = new EventPaymentPage(driver);
+          PaymentPage epp = new PaymentPage(driver);
           epp.payAmountSuccesspopup(driver);
           
 

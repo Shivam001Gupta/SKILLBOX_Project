@@ -73,6 +73,17 @@ public class WebDriverUtility {
 	}
 	
 	/**
+	 * This method will wait until the specified element is Invisible in DOM
+	 * @param driver
+	 * @param element
+	 */
+	public void waitForElementToBeInvisible(WebDriver driver, WebElement element)
+	{ 
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOf(element));
+	}
+	
+	/**
 	 * This method will wait until specified element is clickable
 	 * @param driver
 	 * @param element
@@ -143,6 +154,16 @@ public class WebDriverUtility {
 	{
 		Actions act = new Actions(driver);
 		act.keyDown(Keys.TAB).perform();
+	}
+	
+	/**
+	 * This Method is Used to perform  Enter Button Action
+	 * @param driver
+	 */
+	public void enterButtonAction(WebDriver driver)
+	{
+		Actions act = new Actions(driver);
+		act.keyDown(Keys.ENTER).perform();
 	}
 	
 	
