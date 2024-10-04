@@ -270,7 +270,7 @@ public class HomePage extends WebDriverUtility {
 				
 	}
 	
-	public void signUp(WebDriver driver, String name, String mobile, String password)
+	public void signUp(WebDriver driver, String name, String mobile, String password) throws InterruptedException
 	{
 		loginSignUpBtn.click();
 		signUpLnk.click();

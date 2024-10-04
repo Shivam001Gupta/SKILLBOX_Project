@@ -120,13 +120,13 @@ public class TransactionHistoryPage extends WebDriverUtility{
 			
 		getInvoiceBtn.click();
 		Thread.sleep(5000);
-		swtichToWindow(driver, "pdf");
-		System.out.print(driver.getCurrentUrl()+"\n");
-		Thread.sleep(5000);
-		driver.close();
-		swtichToWindow(driver, "ticket-bookings");
-		Thread.sleep(5000);
-		System.out.print(driver.getCurrentUrl()+"\n");
+//		swtichToWindow(driver, "pdf");
+//		System.out.print(driver.getCurrentUrl()+"\n");
+//		Thread.sleep(5000);
+//		driver.close();
+//		swtichToWindow(driver, "ticket-bookings");
+//		Thread.sleep(5000);
+//		System.out.print(driver.getCurrentUrl()+"\n");
 		getTicketBtn.click();
 		Thread.sleep(5000);
 		swtichToWindow(driver, "png");

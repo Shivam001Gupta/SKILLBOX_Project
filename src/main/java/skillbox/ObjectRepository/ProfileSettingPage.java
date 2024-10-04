@@ -41,7 +41,7 @@ public class ProfileSettingPage extends WebDriverUtility {
 	@FindBy(xpath="//span[.='DJ/Producer']")
 	private WebElement category;
 	
-	@FindBy(xpath="//nz-select[@formcontrolname='subCategory']")
+	@FindBy(xpath="//nz-select[@formcontrolname='subCategory']/div/span")
 	private WebElement subCategoryClk;
 	
 	@FindBy(id="step1_btn")

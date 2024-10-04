@@ -106,6 +106,7 @@ public class BaseClass {
 	@AfterClass(alwaysRun = true)
 	public void acConfig()
 	{
+		if (driver != null)
 		driver.quit();
 		System.out.println(" ========== Browser Closed ========");
 	}

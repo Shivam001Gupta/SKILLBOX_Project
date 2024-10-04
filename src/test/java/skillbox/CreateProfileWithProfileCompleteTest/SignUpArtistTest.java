@@ -12,13 +12,13 @@ class SignUpArtistTest extends BaseClass {
 		
 		//Creating Artist Profile
 		HomePage hp = new HomePage(driver);
-		hp.signUp(driver, "An cort", "9811475955", "12345678");
+		hp.signUp(driver, "Ancort", "9811475955", "12345678");
 		hp.signUpArtist(driver);
 		System.out.println("Account creation successfully");
 		
 		//Complete Artist Profile
 		ProfileSettingPage psp = new ProfileSettingPage(driver);
-		psp.profileCompleteArtist(driver,"Ancotr", "India", "Allahabad", "Tech-House");
+		psp.profileCompleteArtist(driver,"Ancotr", "India", "Allahabad", "Rock");
 		
 		String succesmsg = psp.getSuccesmsg().getText();
 		Assert.assertTrue(succesmsg.contains("successfully"));

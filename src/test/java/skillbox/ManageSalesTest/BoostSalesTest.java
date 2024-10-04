@@ -25,6 +25,7 @@ public class BoostSalesTest extends BaseClass {
 		//Select Contact
 		CampignPage cp  = new CampignPage(driver);
 		cp.selectContacts(driver);
+
 		
 		//Pay Through Razorpay PopUp
 		PaymentPage pp = new PaymentPage(driver);

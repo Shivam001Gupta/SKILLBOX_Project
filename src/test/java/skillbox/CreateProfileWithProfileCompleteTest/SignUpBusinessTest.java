@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.HomePage;
 import skillbox.ObjectRepository.ProfileSettingPage;
-
+	
 public class SignUpBusinessTest extends BaseClass {
 	
 	@Test
@@ -18,7 +18,7 @@ public class SignUpBusinessTest extends BaseClass {
 	    
 	    //Complete Business Profile
 	    ProfileSettingPage psp = new ProfileSettingPage(driver);
-	    psp.profileCompleteBusiness(driver,"India", "Allahabad","Tech-House");
+	    psp.profileCompleteBusiness(driver,"India", "Allahabad","Rock");
 	   
 	    String succesmsg = psp.getSuccesmsg().getText();
 		Assert.assertTrue(succesmsg.contains("successfully"));

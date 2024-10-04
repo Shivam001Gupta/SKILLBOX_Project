@@ -56,7 +56,7 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//button[@nztype='primary']")
 	private WebElement selectTimeBtn;
 	
-	@FindBy(xpath="//*[text()='Description']/..//angular-editor/div/div/div")
+	@FindBy(xpath="//angular-editor[@placeholder='Enter Description']")
 	private WebElement eventDescriptionEdt;
 	
 	@FindBy(xpath="//nz-select[@nzplaceholder='Search city']")
@@ -546,8 +546,7 @@ public class CreateListingPage extends WebDriverUtility {
 
 	public void createTicket(WebDriver driver, String ticketname ) throws Throwable
 	{
-//		waitForElementToBeVisible(driver, selectTicketSection);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		selectTicketSection.click();
 		waitForElementToBeVisible(driver, paidTicketClk);
 		paidTicketClk.click();

@@ -71,7 +71,6 @@ public class CampignPage extends WebDriverUtility {
 
 
 	
-	
 
 
 	
@@ -106,17 +105,6 @@ public class CampignPage extends WebDriverUtility {
 		waitForElementToBeVisible(driver, succesmsg);	
 		Thread.sleep(2000);
 	}
-
-
-	
-	
-	
-	
-	
-	
-
-	
-	
 	
 	
 	}

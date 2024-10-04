@@ -26,23 +26,30 @@ public class PaymentPage extends WebDriverUtility {
 	@FindBy(xpath="//input[@placeholder='Email Id']")
 	private WebElement emailIdEdt;
 	
-	@FindBy(xpath="(//input[@type='tel'])[2]")
+	@FindBy(xpath="//input[@name='contact']")
 	private WebElement rzpmobno;
 	
-	@FindBy(xpath="//button[text()='Proceed']")
+	@FindBy(xpath="//button[text()='Continue']")
 	private WebElement rzpproceed;
 	
 	@FindBy(xpath="(//img[@src='https://cdn.razorpay.com/wallet-sq/phonepe.png'])[1]")
 	private WebElement phonepeClk;
 	
-	@FindBy(xpath="//button[text()='Pay Now']")
+	@FindBy(xpath="//span[text()='PhonePe']")
 	private WebElement finalPayNow;
 	
 	@FindBy(xpath="//button[text()='Success']")
 	private WebElement succcessBtn;
 	
+	@FindBy(xpath="(//iframe[@class='razorpay-checkout-frame'])[1]")
+	private WebElement rzpframe;
 	
 	
+	
+	
+	
+	
+
 	
 
 	public PaymentPage(WebDriver driver)
@@ -91,6 +98,9 @@ public class PaymentPage extends WebDriverUtility {
 		return succcessBtn;
 	}
 	
+	public WebElement getRzpframe() {
+		return rzpframe;
+	}
 	
 	
 	
@@ -113,27 +123,46 @@ public class PaymentPage extends WebDriverUtility {
 			
 	}
 	
-	public void payAmountSuccesspopup(WebDriver driver) throws Throwable
+	public void payAmountSuccesspopuprfid(WebDriver driver, String mob) throws Throwable
 	{
-//		waitForElementToBeVisible(driver, walletPaymentMethod);
+		Thread.sleep(6000);
+		driver.switchTo().frame(1);       
+		rzpmobno.sendKeys(mob);
+		rzpproceed.click();
+		Thread.sleep(3000);
+		phonepeClk.click();
+		Thread.sleep(2000);
+		finalPayNow.click();
+		Thread.sleep(2000);
 		swtichToWindow(driver, "razorpay");
-		phonePePaymentMethod.click();
+		succcessBtn.click();
+		swtichToWindow(driver, "sbmailer.com");
+		Thread.sleep(10000);
+		waitForElementToBeVisible(driver, eventSBCode);
+		Thread.sleep(5000);
+
+		
+					
+	}
+	
+	public void payAmountId(WebDriver driver) throws Throwable
+	{
+		waitForElementToBeVisible(driver, payButton);
 		Thread.sleep(2000);
 		payButton.click();
-		Thread.sleep(3000);
-		swtichToWindow(driver, "razorpay");
-		successBtn.click();
-		swtichToWindow(driver, "sbmailer.com");
-		waitForElementToBeVisible(driver, eventSBCode);
 		Thread.sleep(2000);
-		
+			
 			
 	}
+	
+	
 	
 	public void payAmountSuccesspopup(WebDriver driver, String mob) throws Throwable
 	{
 		
-		
+//		WebElement iframe = rzpframe;
+//		//Switch to the frame
+//		driver.switchTo().frame(iframe);
 		Thread.sleep(6000);
 		driver.switchTo().frame(0);       
 		rzpmobno.sendKeys(mob);
@@ -145,6 +174,7 @@ public class PaymentPage extends WebDriverUtility {
 		Thread.sleep(2000);
 		swtichToWindow(driver, "razorpay");
 		succcessBtn.click();
+		Thread.sleep(10000);		
 		swtichToWindow(driver, "sbmailer.com");
 		Thread.sleep(5000);
 						

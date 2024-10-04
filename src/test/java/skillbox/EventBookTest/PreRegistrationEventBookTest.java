@@ -5,7 +5,7 @@ import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.EventBookingPage;
 import skillbox.ObjectRepository.EventDetailPage;
 import skillbox.ObjectRepository.EventTicketPage;
-
+	
 public class PreRegistrationEventBookTest extends BaseClass {
 	
 	@Test

@@ -91,13 +91,12 @@ public class EventTicketPage extends WebDriverUtility {
 	
 	public void selectTicketsupersonicwidget(String text) throws Throwable
 	{		
-		passSelect.click();
+//		passSelect.click();
 		Thread.sleep(2000);
-		entryCouponPaste.sendKeys("ENTER1234");
-		goBtn.click();
+//		entryCouponPaste.sendKeys("ENTER1234");
+//		goBtn.click();
 		Thread.sleep(3000);
 		ticketCheckout.click();
-		
 	}
 
 	

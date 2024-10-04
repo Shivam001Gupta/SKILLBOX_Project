@@ -27,7 +27,7 @@ public class AddOnPage extends WebDriverUtility {
 	@FindBy(xpath="//button[text()='Checkout']")
 	private WebElement addOnCheckOutBtn;
 	
-	@FindBy(xpath="//div[@unselectable='unselectable']")
+	@FindBy(xpath="//nz-select[@nzplaceholder='City*']")
 	private WebElement cityClk;
 	
 	@FindBy(xpath="//nz-select[@nzplaceholder='City*']/div/div/div[2]/div/input")   // "//nz-select[@nzplaceholder='City*']"
@@ -102,6 +102,7 @@ public class AddOnPage extends WebDriverUtility {
 		    waitForElementToBeVisible(driver, addOnCheckOutBtn);
 			Thread.sleep(3000);
 			shippingAddressEdt.sendKeys(Address);
+			Thread.sleep(2000);
 			cityClk.click();
 			Thread.sleep(3000);
 			cityEdt.sendKeys(city);
