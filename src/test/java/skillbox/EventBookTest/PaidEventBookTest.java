@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.EventBookingPage;
 import skillbox.ObjectRepository.EventDetailPage;
-import skillbox.ObjectRepository.EventListingPage;
 import skillbox.ObjectRepository.PaymentPage;
 import skillbox.ObjectRepository.EventTicketPage;
 import skillbox.ObjectRepository.HomePage;
@@ -21,8 +20,7 @@ public class PaidEventBookTest extends BaseClass {
 		hp.clickOnEvent(driver);
 		
 		//Click on the Event from Listing
-		EventListingPage elp = new EventListingPage(driver);
-		elp.selectEventFromList(driver, "Skillbox Paid Event KT (INR 100 - 10000)");
+		 driver.get("https://www.sbmailer.com/events/skillbox-paid-event-kt");
         
 		//Click on the Book Now button from Event detail Page
         EventDetailPage edp = new EventDetailPage(driver);

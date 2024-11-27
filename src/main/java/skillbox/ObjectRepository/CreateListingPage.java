@@ -539,11 +539,7 @@ public class CreateListingPage extends WebDriverUtility {
 	}
 	
 	
-	
-	
-
-
-
+		
 	public void createTicket(WebDriver driver, String ticketname ) throws Throwable
 	{
 		Thread.sleep(5000);

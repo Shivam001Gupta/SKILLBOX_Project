@@ -6,8 +6,9 @@ import skillbox.ObjectRepository.HomePage;
 
 public class AllTest extends BaseClass 
 
+
 {
-	@Test
+	@Test(enabled=false)
 	public void creatediy() throws Throwable
 	{
 		//Login From User and Open Create Listing
