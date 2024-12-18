@@ -167,6 +167,16 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//label[text()='Partner Image']/../input[1]")
 	private WebElement partnerimg;
 	
+	@FindBy(xpath="//h6[@data-target='#publishEventModal']")
+	private WebElement publishbtn;
+	
+	@FindBy(xpath="//h5[text()='Published']")
+	private WebElement publish;
+	
+
+	
+
+
 	
 
 
@@ -424,6 +434,14 @@ public class CreateListingPage extends WebDriverUtility {
 	public WebElement getAddPartnerBtn() {
 		return addPartnerBtn;
 	}
+	
+	public WebElement getPublishbtn() {
+		return publishbtn;
+	}
+
+	public WebElement getPublish() {
+		return publish;
+	}
 
 
 	
@@ -581,6 +599,17 @@ public class CreateListingPage extends WebDriverUtility {
 		ticketEnableBtn.click();
 		
 	}
+	
+	public void publishEvent(WebDriver driver) throws Throwable
+	{
+		
+		publishbtn.click();
+		waitForElementToBeVisible(driver, publish);
+		Thread.sleep(2000);
+		publish.click();
+		Thread.sleep(2000);
+	}
+	
 	
 	
 	

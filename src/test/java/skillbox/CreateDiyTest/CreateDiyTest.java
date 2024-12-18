@@ -32,6 +32,10 @@ public class CreateDiyTest extends BaseClass {
 		//Create Free Ticket
 		clp.createFreeTicket(driver, "RSVP");
 		
+		//Publish Event
+		clp.publishEvent(driver);
+		
+		
         //Create Coupon & Delete Coupon
 		clp.createCoupon(driver);
 		
