@@ -15,7 +15,7 @@ public class SeatSectionEventBookTest extends BaseClass {
 	  public void addoneventbook() throws Throwable
 	  {
 		  //Open Free Event By URL
-		  driver.get("https://www.sbmailer.com/events/the-event-seat-section-delhi");
+		  driver.get(URL+"events/the-event-seat-section-delhi");
 		  
 		  //Click on the Book Now Button
 		  EventDetailPage edp = new EventDetailPage(driver);

@@ -13,7 +13,7 @@ public class StoryReliefFundTest extends BaseClass {
 			
 			 
 			//Open Free Event By URL
-			driver.get("https://www.sbmailer.com/story/artist/artist42075/post/39/1661348390u2dfz2kxsukspwsrmp4");
+			driver.get(URL+"story/artist/artist42075/post/39/1661348390u2dfz2kxsukspwsrmp4");
 			
 			//Login From User and Open Feeds
 			HomePage hp = new HomePage(driver);

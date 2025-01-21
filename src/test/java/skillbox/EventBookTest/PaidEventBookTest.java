@@ -20,7 +20,7 @@ public class PaidEventBookTest extends BaseClass {
 		hp.clickOnEvent(driver);
 		
 		//Click on the Event from Listing
-		 driver.get("https://www.sbmailer.com/events/skillbox-paid-event-kt");
+		 driver.get(URL+"events/skillbox-paid-event-kt");
         
 		//Click on the Book Now button from Event detail Page
         EventDetailPage edp = new EventDetailPage(driver);

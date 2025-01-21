@@ -13,7 +13,7 @@ public class RFIDrechargeTest extends BaseClass {
 		public void rfidrecharge() throws Throwable{
 			
 			//Open Free Event By URL
-			driver.get("https://www.sbmailer.com/recharge?cardno=CARD4420");
+			driver.get(URL+"recharge?cardno=CARD4420");
 			
 			//Enter DetailsS
 			RFIDRechargePage rrp = new RFIDRechargePage(driver);

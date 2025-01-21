@@ -15,7 +15,7 @@ public class DonationEventBookTest extends BaseClass {
 	public void donationeventbook () throws Throwable
 	{
 		 //Open Free Event By URL
-		  driver.get("https://www.sbmailer.com/events/skillbox-donation-event-kt");
+		  driver.get(URL+"events/skillbox-donation-event-kt");
 		  
 		  //Click on the Book Now Button
 		  EventDetailPage edp = new EventDetailPage(driver);

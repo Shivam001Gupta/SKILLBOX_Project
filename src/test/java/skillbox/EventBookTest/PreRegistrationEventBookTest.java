@@ -12,7 +12,7 @@ public class PreRegistrationEventBookTest extends BaseClass {
 	  public void freeticketbook() throws Throwable
 	  {
 		  //Open Free Event By URL
-		  driver.get("https://www.sbmailer.com/events/the-pre-registration-event-kt");
+		  driver.get(URL+"events/the-pre-registration-event-kt");
 		  
 		  //Click on the Book Now Button
 		  EventDetailPage edp = new EventDetailPage(driver);

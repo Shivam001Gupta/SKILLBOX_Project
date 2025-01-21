@@ -17,175 +17,175 @@ public class AllTest extends BaseClass
 	
 
    
-        driver.get("https://www.sbmailer.com/feedbox");;
+        driver.get(URL+"feedbox");;
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
         
         
 //        
-//        driver.get("https://www.sbmailer.com/wedding-packages");;
+//        driver.get(URL+"wedding-packages");;
 //        Thread.sleep(5000);
 //        driver.navigate().refresh();
 //        Thread.sleep(5000);
 //
 //        
-//        driver.get("https://www.sbmailer.com/corporate-packages");;
+//        driver.get(URL+"corporate-packages");;
 //        Thread.sleep(5000);
 //        driver.navigate().refresh();
 //        Thread.sleep(5000);
 //
 //        
-//        driver.get("https://www.sbmailer.com/private-event-packages");
+//        driver.get(URL+"private-event-packages");
 //        Thread.sleep(5000);
 //        driver.navigate().refresh();
 //        Thread.sleep(5000);
 //
 //        
-//        driver.get("https://www.sbmailer.com/venue-club-gig-packages");
+//        driver.get(URL+"venue-club-gig-packages");
 //        Thread.sleep(5000);
 //        driver.navigate().refresh();
 //        Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/events");
+        driver.get(URL+"events");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/shoutout-packages");
+        driver.get(URL+"shoutout-packages");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/livebox");
+        driver.get(URL+"livebox");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/discover");
+        driver.get(URL+"discover");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/streambox");
+        driver.get(URL+"streambox");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/short-url");
+        driver.get(URL+"short-url");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/about-us");
+        driver.get(URL+"about-us");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/career");
+        driver.get(URL+"career");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/franchise");
+        driver.get(URL+"franchise");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/team");
+        driver.get(URL+"team");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/contact-us");
+        driver.get(URL+"contact-us");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/privacy-policy");
+        driver.get(URL+"privacy-policy");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/terms-conditions");
+        driver.get(URL+"terms-conditions");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/refund-policy");
+        driver.get(URL+"refund-policy");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/annual-return");
+        driver.get(URL+"annual-return");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/artist/profile/alanwalker95");
+        driver.get(URL+"artist/profile/alanwalker95");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/booking-pannels/settlement");
+        driver.get(URL+"booking-pannels/settlement");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/manage/draft");
+        driver.get(URL+"manage/draft");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/booking-pannels");
+        driver.get(URL+"booking-pannels");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
-        driver.get("https://www.sbmailer.com/booking-pannels/event-tickets/cWdpMUlNMFZKUGExRUJSYjE3VWFVUT09");
+        driver.get(URL+"booking-pannels/event-tickets/cWdpMUlNMFZKUGExRUJSYjE3VWFVUT09");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
         
         
-        driver.get("https://www.sbmailer.com/promoter");
-        Thread.sleep(5000);
-        driver.navigate().refresh();
-        Thread.sleep(5000);
-
-        
-        driver.get("https://www.sbmailer.com/orders/ticket-bookings");
+        driver.get(URL+"promoter");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/user-change-password");
+        driver.get(URL+"orders/ticket-bookings");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
 
         
-        driver.get("https://www.sbmailer.com/manage/create");
+        driver.get(URL+"user-change-password");
+        Thread.sleep(5000);
+        driver.navigate().refresh();
+        Thread.sleep(5000);
+
+        
+        driver.get(URL+"manage/create");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);

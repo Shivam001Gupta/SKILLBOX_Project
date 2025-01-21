@@ -11,7 +11,7 @@ public class EventListTest extends  BaseClass {
 	  public void categoryFilter() throws Throwable
 	  {
 		  //Open Free Event By URL
-		  driver.get("https://www.sbmailer.com/events");
+		  driver.get(URL+"events");
 		  
 		  EventListingPage elp = new EventListingPage(driver);
 	      elp.selectCategory(driver);

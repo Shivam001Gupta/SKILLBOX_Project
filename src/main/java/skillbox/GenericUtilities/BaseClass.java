@@ -33,6 +33,9 @@ public class BaseClass {
 	
 	public WebDriver driver = null;
 	
+	protected String URL = "https://www.sbmailer.com/";
+//	protected String URL = "https://gcp.sbmailer.com/";
+	
 	@BeforeSuite
 	public void bsConfig()
 	{
@@ -48,9 +51,10 @@ public class BaseClass {
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
 			ChromeOptions option = new ChromeOptions();
-			option.setBinary("/Users/Apple/git/SKILLBOX_Project/src/main/resources/chromedriver");
+//			option.addArguments("--headless");
+//			option.setBinary("/Users/Apple/git/SKILLBOX_Project/src/main/resources/chromedriver");
 //			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(option);
 			System.out.println(BROWSER + " === Browser launched ===");
 
 		} else if (BROWSER.equalsIgnoreCase("firefox")) {

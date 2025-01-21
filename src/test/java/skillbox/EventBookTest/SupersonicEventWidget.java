@@ -14,7 +14,7 @@ public class SupersonicEventWidget extends BaseClass {
 	public void supersonicaddonevent() throws Throwable {
 		
 		  //Open Supersonic Widget URL
-		  driver.get("https://www.sbmailer.com/events-widget/tickets/vh1-supersonic-2024"); 
+		  driver.get(URL+"events-widget/tickets/vh1-supersonic-2024"); 
 			
 		
 		  //Select Ticket and Quantity
