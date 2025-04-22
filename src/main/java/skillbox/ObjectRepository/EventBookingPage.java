@@ -62,8 +62,11 @@ public class EventBookingPage extends WebDriverUtility {
 	@FindBy(xpath="//*[@id='couponModal']/div/div/div[2]/p")
 	private WebElement errorTextMsg;
 	
-	@FindBy(xpath="//h2[@class='ng-star-inserted']")
+	@FindBy(xpath="(//div[@class='modal-body']/div/h2)[2]")
 	private WebElement freeTicketConfirmationMsg;
+	
+	@FindBy(xpath="(//div[@class='modal-body']/div/h2)[1]")
+	private WebElement preTicketConfirmationMsg;
 	
 	@FindBy(xpath="//*[text()=' Confirm ']/..")
 	private WebElement acceptCovidguidelines;
@@ -168,6 +171,10 @@ public class EventBookingPage extends WebDriverUtility {
 		return freeTicketConfirmationMsg;
 	}
 	
+	public WebElement getPreTicketConfirmationMsg() {
+		return preTicketConfirmationMsg;
+	}
+
 	public WebElement getAddGuestBtn() {
 		return addGuestBtn;
 	}
@@ -285,6 +292,13 @@ public class EventBookingPage extends WebDriverUtility {
 	public void freeticketconfirmation(WebDriver driver) throws Throwable
 	{
 		waitForElementToBeVisible(driver,freeTicketConfirmationMsg);
+		Thread.sleep(2000);
+		
+	}
+	
+	public void preticketconfirmation(WebDriver driver) throws Throwable
+	{
+		waitForElementToBeVisible(driver,preTicketConfirmationMsg);
 		Thread.sleep(2000);
 		
 	}

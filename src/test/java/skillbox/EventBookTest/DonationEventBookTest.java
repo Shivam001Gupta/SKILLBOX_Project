@@ -14,7 +14,7 @@ public class DonationEventBookTest extends BaseClass {
 	@Test
 	public void donationeventbook () throws Throwable
 	{
-		 //Open Free Event By URL
+		 //Open Donation Event By URL
 		  driver.get(URL+"events/skillbox-donation-event-kt");
 		  
 		  //Click on the Book Now Button

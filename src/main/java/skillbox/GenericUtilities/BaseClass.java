@@ -1,5 +1,8 @@
 package skillbox.GenericUtilities;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,9 +17,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
-
-
 
 /**
  * This class consists of all the basic configuration annotations for 
@@ -35,6 +35,7 @@ public class BaseClass {
 	
 	protected String URL = "https://www.sbmailer.com/";
 //	protected String URL = "https://gcp.sbmailer.com/";
+//	protected String URL = "https://gcp.skillboxes.com/";
 	
 	@BeforeSuite
 	public void bsConfig()
@@ -49,9 +50,21 @@ public class BaseClass {
 		String BROWSER = pUtil.getDataFromPropertyFile("browser");
 		String URL = pUtil.getDataFromPropertyFile("url");
 		
+		
+		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
+			
+			// Create preferences map
+	        Map<String, Object> prefs = new HashMap<>();
+
+	        // Disable the password manager prompts
+	        prefs.put("credentials_enable_service", false);
+	        prefs.put("profile.password_manager_enabled", false);
+	        prefs.put("profile.password_manager_leak_detection", false);
 			ChromeOptions option = new ChromeOptions();
-//			option.addArguments("--headless");
+			option.setExperimentalOption("prefs", prefs);
+			
+			option.addArguments("--headless");
 //			option.setBinary("/Users/Apple/git/SKILLBOX_Project/src/main/resources/chromedriver");
 //			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(option);

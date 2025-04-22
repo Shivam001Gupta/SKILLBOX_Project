@@ -2,35 +2,70 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-28T11:15:18 IST" name="Default suite" finished-at="2025-01-28T11:15:54 IST" duration-ms="36329">
+  <suite started-at="2025-04-16T11:48:36 IST" name="Default suite" finished-at="2025-04-16T11:49:44 IST" duration-ms="67601">
     <groups>
     </groups>
-    <test started-at="2025-01-28T11:15:18 IST" name="Default test" finished-at="2025-01-28T11:15:54 IST" duration-ms="36329">
-      <class name="skillbox.EventBookTest.PaidEventBookTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@1c33c17b]" started-at="2025-01-28T11:15:18 IST" name="bsConfig" finished-at="2025-01-28T11:15:18 IST" duration-ms="13" status="PASS">
+    <test started-at="2025-04-16T11:48:36 IST" name="Default test" finished-at="2025-04-16T11:49:44 IST" duration-ms="67601">
+      <class name="skillbox.EventBookTest.SupersonicEventWidget">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:skillbox.EventBookTest.SupersonicEventWidget@1603cd68]" started-at="2025-04-16T11:48:36 IST" name="bsConfig" finished-at="2025-04-16T11:48:36 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@1c33c17b]" started-at="2025-01-28T11:15:18 IST" name="bcConfig" finished-at="2025-01-28T11:15:31 IST" duration-ms="12707" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:skillbox.EventBookTest.SupersonicEventWidget@1603cd68]" started-at="2025-04-16T11:48:36 IST" name="bcConfig" finished-at="2025-04-16T11:48:45 IST" duration-ms="8382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@1c33c17b]" started-at="2025-01-28T11:15:31 IST" name="bmConfig" finished-at="2025-01-28T11:15:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:skillbox.EventBookTest.SupersonicEventWidget@1603cd68]" started-at="2025-04-16T11:48:45 IST" name="bmConfig" finished-at="2025-04-16T11:48:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="eventbook()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@1c33c17b]" started-at="2025-01-28T11:15:31 IST" name="eventbook" finished-at="2025-01-28T11:15:54 IST" duration-ms="23358" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="supersonicaddonevent()[pri:0, instance:skillbox.EventBookTest.SupersonicEventWidget@1603cd68]" started-at="2025-04-16T11:48:45 IST" name="supersonicaddonevent" finished-at="2025-04-16T11:49:44 IST" duration-ms="58854" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='btn btn-primary d-block ng-star-inserted']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.4', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71f9991d003c7ca505d5db471f3dcca3, clickElement {id=f.C00E46C756F085CE7033B7EE47E40811.d.977D33367D55A47C133FA510CED931CF.e.64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/r5/_xrf10gx5rz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64246}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64246/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (71f9991d003c7ca505d5db471f3dcca3)] -> xpath: //button[text()='Continue']]
+Session ID: 71f9991d003c7ca505d5db471f3dcca3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='btn btn-primary d-block ng-star-inserted']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at skillbox.GenericUtilities.WebDriverUtility.waitForElementToBeVisible(WebDriverUtility.java:72)
-at skillbox.ObjectRepository.EventDetailPage.clickbooknowbtn(EventDetailPage.java:40)
-at skillbox.EventBookTest.PaidEventBookTest.eventbook(PaidEventBookTest.java:27)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.4', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71f9991d003c7ca505d5db471f3dcca3, clickElement {id=f.C00E46C756F085CE7033B7EE47E40811.d.977D33367D55A47C133FA510CED931CF.e.64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /var/folders/r5/_xrf10gx5rz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64246}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64246/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (71f9991d003c7ca505d5db471f3dcca3)] -> xpath: //button[text()='Continue']]
+Session ID: 71f9991d003c7ca505d5db471f3dcca3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+at skillbox.ObjectRepository.PaymentPage.payAmountSuccesspopup(PaymentPage.java:169)
+at skillbox.EventBookTest.SupersonicEventWidget.supersonicaddonevent(SupersonicEventWidget.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,58 +94,25 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-primary d-block ng-star-inserted']"}
-  (Session info: chrome=132.0.6834.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7ac08f70e42a516666fbc08d8fcc1b8c, findElement {value=//a[@class='btn btn-primary d-block ng-star-inserted'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /var/folders/r5/_xrf10gx5rz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49890}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49890/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7ac08f70e42a516666fbc08d8fcc1b8c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- eventbook -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@1c33c17b]" started-at="2025-01-28T11:15:54 IST" name="amConfig" finished-at="2025-01-28T11:15:54 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- supersonicaddonevent -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:skillbox.EventBookTest.SupersonicEventWidget@1603cd68]" started-at="2025-04-16T11:49:44 IST" name="amConfig" finished-at="2025-04-16T11:49:44 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@1c33c17b]" started-at="2025-01-28T11:15:54 IST" name="acConfig" finished-at="2025-01-28T11:15:54 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:skillbox.EventBookTest.SupersonicEventWidget@1603cd68]" started-at="2025-04-16T11:49:44 IST" name="acConfig" finished-at="2025-04-16T11:49:44 IST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:skillbox.EventBookTest.PaidEventBookTest@1c33c17b]" started-at="2025-01-28T11:15:54 IST" name="asConfig" finished-at="2025-01-28T11:15:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:skillbox.EventBookTest.SupersonicEventWidget@1603cd68]" started-at="2025-04-16T11:49:44 IST" name="asConfig" finished-at="2025-04-16T11:49:44 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- skillbox.EventBookTest.PaidEventBookTest -->
+      </class> <!-- skillbox.EventBookTest.SupersonicEventWidget -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

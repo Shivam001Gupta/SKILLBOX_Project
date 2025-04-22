@@ -19,7 +19,7 @@ public class PaidEventBookTest extends BaseClass {
 		HomePage hp = new HomePage(driver);
 		hp.clickOnEvent(driver);
 		
-		//Click on the Event from Listing
+		//Open Event By URL
 		 driver.get(URL+"events/skillbox-paid-event-kt");
         
 		//Click on the Book Now button from Event detail Page

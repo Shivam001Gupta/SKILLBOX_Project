@@ -14,7 +14,7 @@ public class TransactionHistoryTest extends BaseClass {
 		//Login From User and Open Feeds
 		HomePage hp = new HomePage(driver);
 		
-		hp.loginUser(driver, "guptashivam1711@gmail.com", "12345678");
+		hp.loginUser(driver, "guptashivam1711@gmail.com", "123456789");
 		hp.selectTransaction(driver);
 				
 		//Get Event From Transaction History

@@ -9,10 +9,10 @@ import skillbox.GenericUtilities.WebDriverUtility;
 
 public class EventDetailPage extends WebDriverUtility {
 	
-	@FindBy(xpath ="//a[@class='btn btn-primary d-block ng-star-inserted']")
+	@FindBy(xpath ="//a[@class='btn bg-white text-dark font-m mr-3 ng-star-inserted']")
 	private WebElement bookBtnLnk;	
 	
-	@FindBy(xpath ="//button[@class='d-block btn btn-outline-primary btn-block mr-4 ng-star-inserted']")
+	@FindBy(xpath ="//button[@class='btn bg-white text-dark font-m mr-4 ng-star-inserted']")
 	private WebElement bookBtnSeat;
 	
 	

@@ -26,7 +26,7 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//nz-select[@nzplaceholder='Select Tags']")
 	private WebElement tagsclk;
 	
-	@FindBy(xpath="//div[@class='col-lg-8 form-group form-label text-left mt-4']/input[1]")
+	@FindBy(xpath="//input[@class='d-none inputFile']")
 	private WebElement uploadEventCover;
 	
 	@FindBy(xpath="//button[text()='Save']")
@@ -461,6 +461,7 @@ public class CreateListingPage extends WebDriverUtility {
 		selectStartTimeClk.click();
 		Thread.sleep(3000);
 		selectTime.click();
+		Thread.sleep(2000);
 		escapeClickAction(driver);
 		Thread.sleep(2000);
 		slectEndTimeClk.click();

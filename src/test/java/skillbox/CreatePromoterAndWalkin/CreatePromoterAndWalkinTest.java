@@ -14,7 +14,7 @@ public class CreatePromoterAndWalkinTest extends BaseClass {
 		
 		//Login From user
 		HomePage hp = new HomePage(driver);
-		hp.loginUser(driver, "walker@gmail.com", "12345678");
+		hp.loginUser(driver, "walker@gmail.com", "123456789");
 		hp.selectManageDiy(driver);
 		System.out.println("Login Successfully");
 		

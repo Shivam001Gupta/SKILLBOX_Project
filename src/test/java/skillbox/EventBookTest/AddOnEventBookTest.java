@@ -14,8 +14,8 @@ public class AddOnEventBookTest extends BaseClass {
 	@Test
 	  public void addoneventbook() throws Throwable
 	  {
-		  //Open Free Event By URL
-		  driver.get("https://www.sbmailer.com/events/skillbox-add-on-event-kt");
+		  //Open Add-On Event By URL
+		  driver.get(URL+"events/skillbox-add-on-event-kt");
 		  
 		  //Click on the Book Now Button
 		  EventDetailPage edp = new EventDetailPage(driver);

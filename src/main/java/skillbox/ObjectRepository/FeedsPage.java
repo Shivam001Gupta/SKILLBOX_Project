@@ -219,7 +219,7 @@ public class FeedsPage extends WebDriverUtility{
 	public void delete() throws InterruptedException
 	 {
 		 threeDotdelClk.click();
-		 Thread.sleep(2000);
+		 Thread.sleep(3000);
 		 deleteClk.click();
 		 
 	 }

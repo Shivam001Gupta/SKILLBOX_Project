@@ -286,8 +286,9 @@ public class HomePage extends WebDriverUtility {
 	{
 		artistType.click();
 		signUpBtn.click();
-		waitForElementToBeVisible(driver, skipForNow);
-		skipForNow.click();
+		waitForElementToBeVisible(driver, dropDownMenuLink);
+//		waitForElementToBeVisible(driver, skipForNow);
+//		skipForNow.click();
 		dropDownMenuLink.click();
 		Thread.sleep(2000);
 		profileSettings.click();
@@ -298,8 +299,9 @@ public class HomePage extends WebDriverUtility {
 	{
 		fanType.click();
 		signUpBtn.click();
-		waitForElementToBeVisible(driver, skipForNow);
-		skipForNow.click();
+		waitForElementToBeVisible(driver, dropDownMenuLink);
+//		waitForElementToBeVisible(driver, skipForNow);
+//		skipForNow.click();
 		dropDownMenuLink.click();
 		Thread.sleep(2000);
 		profileSettings.click();
@@ -310,8 +312,9 @@ public class HomePage extends WebDriverUtility {
 	{
 		BusinessType.click();
 		signUpBtn.click();
-		waitForElementToBeVisible(driver, skipForNow);
-		skipForNow.click();
+		waitForElementToBeVisible(driver, dropDownMenuLink);
+//		waitForElementToBeVisible(driver, skipForNow);
+//		skipForNow.click();
 		dropDownMenuLink.click();
 		Thread.sleep(2000);
 		profileSettings.click();

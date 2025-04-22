@@ -37,12 +37,12 @@ public class PreRegistrationEventBookTest extends BaseClass {
 	      ebp.pinAndPay(driver, "231001");
 	      
 	      //Success PopUp
-	      ebp.freeticketconfirmation(driver);
+	      ebp.preticketconfirmation(driver);
 	      
 	      
-	      String freeTicketConfirmationMsg = ebp.getFreeTicketConfirmationMsg().getText();
-		  Assert.assertTrue(freeTicketConfirmationMsg.contains("successful"));
-		  System.out.println(freeTicketConfirmationMsg);
+	      String preTicketConfirmationMsg = ebp.getPreTicketConfirmationMsg().getText();
+		  Assert.assertTrue(preTicketConfirmationMsg.contains("successful"));
+		  System.out.println(preTicketConfirmationMsg);
 		  
 	      
 	      

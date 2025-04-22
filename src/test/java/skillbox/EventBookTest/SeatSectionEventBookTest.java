@@ -17,9 +17,10 @@ public class SeatSectionEventBookTest extends BaseClass {
 		  //Open Free Event By URL
 		  driver.get(URL+"events/the-event-seat-section-delhi");
 		  
+		    
 		  //Click on the Book Now Button
 		  EventDetailPage edp = new EventDetailPage(driver);
-	      edp.clickbooknowbtnseat(driver);
+		  edp.clickbooknowbtnseat(driver);
 	      
 	      	      	      
 	      //Select Seat

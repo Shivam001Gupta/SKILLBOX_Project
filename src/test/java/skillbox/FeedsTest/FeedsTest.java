@@ -13,7 +13,7 @@ public class FeedsTest extends BaseClass {
 			//Login From User and Open Feeds
 			HomePage hp = new HomePage(driver);
 			hp.getFeedsLnk().click();
-			hp.loginUser(driver, "walker@gmail.com", "12345678");
+			hp.loginUser(driver, "walker@gmail.com", "123456789");
 			
 			//Post Text
 			FeedsPage fp = new FeedsPage(driver);
