@@ -25,28 +25,28 @@ public class HomePage extends WebDriverUtility {
 	@FindBy(linkText="Sign up")
 	private WebElement signUpLnk;
 	
-	@FindBy(xpath="//input[@ value='A']")
+	@FindBy(xpath="(//div[@class='ac_type_inner'])[1]")
 	private WebElement artistType;
 	
-	@FindBy(xpath="//input[@ value='F']")
+	@FindBy(xpath="(//div[@class='ac_type_inner'])[2]")
 	private WebElement fanType;
 	
-	@FindBy(xpath="//input[@ value='B']")
+	@FindBy(xpath="(//div[@class='ac_type_inner'])[3]")
 	private WebElement BusinessType;
 	
 	@FindBy (xpath="//button[.='Sign up']")
 	private WebElement signUpBtn;
 
-	@FindBy(xpath="//button[text()='Continue with email']")
+	@FindBy(xpath="//button[text()='Continue with email/mobile']")
 	private WebElement continuteWithEmailBtn;
 	
-	@FindBy(xpath="//small[text()='Login via Password']")
+	@FindBy(xpath="//small[text()='Login via Password ']")
 	private WebElement loginViaPassword;
 	
 	@FindBy(xpath="//input[@placeholder='Name']")
 	private WebElement nameEdt;
 	
-	@FindBy(xpath="//input[@placeholder='Email Id']")
+	@FindBy(xpath="//input[@placeholder='Email or Mobile']")
 	private WebElement emailIdEdt;
 	
 	@FindBy(xpath="//input[@placeholder='Email']")
@@ -270,14 +270,14 @@ public class HomePage extends WebDriverUtility {
 				
 	}
 	
-	public void signUp(WebDriver driver, String name, String mobile, String password) throws InterruptedException
+	public void signUp(WebDriver driver, String name, String password) throws InterruptedException
 	{
 		loginSignUpBtn.click();
 		signUpLnk.click();
 		nameEdt.sendKeys(name);
-		String c = RandomStringUtils.randomAlphabetic(7);
+		String c = RandomStringUtils.randomNumeric(10);
 		emailEdt.sendKeys(c+"@ghel.com");
-		mobileEdt.sendKeys(mobile);
+		mobileEdt.sendKeys(c);
 		passwordEdt.sendKeys(password);		
 	}
 	
@@ -326,6 +326,7 @@ public class HomePage extends WebDriverUtility {
 		loginSignUpBtn.click();
 		continuteWithEmailBtn.click();
 		loginViaPassword.click();
+		Thread.sleep(1000);
 		emailIdEdt.sendKeys(email);
 		passwordEdt.sendKeys(password);
 		loginBtn.click();

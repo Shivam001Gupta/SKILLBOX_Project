@@ -29,22 +29,28 @@ public class ProfileSettingPage extends WebDriverUtility {
 	@FindBy(xpath="//nz-select[@nzplaceholder='Country']")
 	private WebElement countryClk;
 	
-	@FindBy(xpath="//li[@unselectable='unselectable']")
-	private List<WebElement> listItems;
+	@FindBy(xpath="(//input[@autocomplete='off'])[1]")
+	private WebElement countryEdt;
 	
-	@FindBy(xpath="//nz-select[@formcontrolname='currentCity']")
+	@FindBy(xpath="//nz-option-item/div")
+	private List<WebElement> listItems;
+		
+	@FindBy(xpath="//nz-select[@nzplaceholder='City']")
 	private WebElement cityClk;
 	
-	@FindBy(xpath="//nz-select[@formcontrolname='currentCity']/div/div/div/div/input")
+	@FindBy(xpath="(//input[@autocomplete='off'])[2]")
 	private WebElement cityEdt;
 	
 	@FindBy(xpath="//span[.='DJ/Producer']")
 	private WebElement category;
 	
-	@FindBy(xpath="//nz-select[@formcontrolname='subCategory']/div/span")
+	@FindBy(xpath="//nz-select[@nzplaceholder='Select Sub-Category']")
 	private WebElement subCategoryClk;
 	
-	@FindBy(id="step1_btn")
+	@FindBy(xpath="//nz-select[@nzplaceholder='Select Sub Category']")
+	private WebElement subCategorybusinessClk;
+
+	@FindBy(xpath="//button[@id='step1_btn']")
 	private WebElement step1BtnArtist;
 	
 	@FindBy(xpath="//nz-select[@nzplaceholder='Select Language']")
@@ -62,16 +68,16 @@ public class ProfileSettingPage extends WebDriverUtility {
 	@FindBy(id="step2-btn")
 	private WebElement step2BtnArtist;
 	
-	@FindBy(name="facebook")
+	@FindBy(xpath="//input[@name='facebook']")
 	private WebElement faceBookEdt;
 	
-	@FindBy(name="youTube")
+	@FindBy(xpath="//input[@name='youTube']")
 	private WebElement youTubeEdt;
 	
-	@FindBy(name="instagram")	
+	@FindBy(xpath="//input[@name='instagram']")	
 	private WebElement instagraEdt;
 	
-	@FindBy(name="twitter")
+	@FindBy(xpath="//input[@name='twitter']")
 	private WebElement twitterEdt;
 	
 	@FindBy(id="step3-btn")
@@ -80,7 +86,7 @@ public class ProfileSettingPage extends WebDriverUtility {
 	@FindBy(name="TagsCategory")
 	private WebElement tagsCategoryClk;
 	
-	@FindBy(xpath="//button[@class='btn btn-primary float-right col-lg-3']")
+	@FindBy(xpath="//button[@class='btn btn-dark float-end col-lg-3 col-12']")
 	private WebElement saveBtnClkFan;
 	
 	@FindBy(xpath="//span[text()='Academy']")
@@ -92,10 +98,10 @@ public class ProfileSettingPage extends WebDriverUtility {
 	@FindBy(id="uploadAcademyBroucher")
 	private WebElement uploadAcademyPdf;
 	
-	@FindBy(xpath="//div[@class='form-row']/div/input")
+	@FindBy(xpath="//nz-time-picker[@nzplaceholder='Open Time']")
 	private WebElement timerClk1;
 	
-	@FindBy(xpath="//button[@ class='atp-ref-dialog-close']")
+	@FindBy(xpath="//nz-time-picker[@nzplaceholder='Close Time']")
 	private WebElement timerClk2;
 	
 	@FindBy(id="timepicker-item-id-4")
@@ -138,6 +144,11 @@ public class ProfileSettingPage extends WebDriverUtility {
 	public WebElement getCountryClk() {
 		return countryClk;
 	}
+	
+	public WebElement getCountryEdt() {
+		return countryEdt;
+	}
+
 
 	public List<WebElement> getListItems() {
 		return listItems;
@@ -215,6 +226,10 @@ public class ProfileSettingPage extends WebDriverUtility {
 		return categoryBusinessClk;
 	}
 	
+	public WebElement getSubCategorybusinessClk() {
+		return subCategorybusinessClk;
+	}
+	
 	public WebElement getAddressMapLocation() {
 		return addressMapLocation;
 	}
@@ -272,8 +287,11 @@ public class ProfileSettingPage extends WebDriverUtility {
 		Thread.sleep(2000);
 		System.out.println("Gender Selected Successfully");
 		countryClk.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);	
+		countryEdt.sendKeys(country);
+		Thread.sleep(2000);	
 		selectItemFromList(driver, country, listItems);
+		Thread.sleep(3000);	
 		cityClk.click();
 		Thread.sleep(3000);
 		System.out.println("Country Selected Successfully");
@@ -289,7 +307,12 @@ public class ProfileSettingPage extends WebDriverUtility {
 		selectItemFromList(driver, subcategory, listItems);
 		escapeClickAction(driver);
 		System.out.println("Subcategory Selected Successfully");
-		step1BtnArtist.click();
+		Thread.sleep(2000);
+		tabButtonAction(driver);
+		tabButtonAction(driver);
+		enterButtonAction(driver);
+		Thread.sleep(2000);
+//		step1BtnArtist.click();
 		Thread.sleep(2000);
 		languageClk.click();
 		selectItemFromList(driver, "Hindi", listItems);
@@ -331,7 +354,9 @@ public class ProfileSettingPage extends WebDriverUtility {
 		Thread.sleep(2000);
 		System.out.println("Gender Selected Successfully");
 		countryClk.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);	
+		countryEdt.sendKeys(country);
+		Thread.sleep(2000);	
 		selectItemFromList(driver, country, listItems);
 		cityClk.click();
 		Thread.sleep(3000);
@@ -365,7 +390,9 @@ public class ProfileSettingPage extends WebDriverUtility {
 		profilePicSaveBtn.click();
 		Thread.sleep(3000);
 		countryClk.click();		
-		Thread.sleep(3000);
+		Thread.sleep(2000);	
+		countryEdt.sendKeys(country);
+		Thread.sleep(2000);	
 		selectItemFromList(driver, country, listItems);
 		System.out.println("Country Selected Successfully");
 		cityClk.click();
@@ -376,26 +403,33 @@ public class ProfileSettingPage extends WebDriverUtility {
 		System.out.println("City Selected Successfully");
 		categoryBusinessClk.click();
 		Thread.sleep(2000);
-		subCategoryClk.click();
+		subCategorybusinessClk.click();
 		Thread.sleep(2000);
 		selectItemFromList(driver, subcategory, listItems);
 		escapeClickAction(driver);
-		Thread.sleep(2000);
+		Thread.sleep(2000);	
 		addressMapLocation.sendKeys("New Delhi");
-		step1BtnArtist.click();
+		enterButtonAction(driver);
+//		step1BtnArtist.click();
 		Thread.sleep(2000);
 		uploadAcademyPdf.sendKeys(IConstants.pdfFilePath);
 		Thread.sleep(1000);
-		timerClk1.click();
-		timeSelect1.click();
-		timerClk2.click();
-		timeSelect2.click();
+//		timerClk1.click();
+//		timeSelect1.click();
+//		timerClk2.click();
+//		timeSelect2.click();
 		handleDropDown("4 Year", operationalYearSelect);
-		step2BtnArtist.click();
-		faceBookEdt.sendKeys("https://www.facebook.com/JustinBieber");
-		youTubeEdt.sendKeys("https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ");
+		Thread.sleep(2000);
+//		step2BtnArtist.click();
+		Thread.sleep(2000);
+		System.out.println("LInks");
 		instagraEdt.sendKeys("https://www.instagram.com/justinbieber/?hl=en");
+		youTubeEdt.sendKeys("https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ");
 		twitterEdt.sendKeys("https://twitter.com/jbcrewdotcom?lang=en");
+		faceBookEdt.sendKeys("https://www.facebook.com/JustinBieber");
+		System.out.println("LInks");
+		
+		Thread.sleep(2000);
 		setp3BtnArtist.click();
 		waitForElementToBeVisible(driver, succesmsg);
 	}

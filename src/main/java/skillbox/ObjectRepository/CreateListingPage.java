@@ -20,7 +20,7 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//div[@class='row']/div[4]/nz-select")
 	private WebElement categoryClk;
 	
-	@FindBy(xpath="//li[@unselectable='unselectable']")
+	@FindBy(xpath="//nz-option-item/div")
 	private List<WebElement> listItems;
 	
 	@FindBy(xpath="//nz-select[@nzplaceholder='Select Tags']")
@@ -32,8 +32,12 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//button[text()='Save']")
 	private WebElement imgSaveBtn;
 	
-	@FindBy(xpath="//*[text()='Multiple Day Event ']/span")
+	@FindBy(xpath="//label[@for='radio2']")
 	private WebElement selectMultipleDayEventClk;
+	
+	@FindBy(xpath="//label[text()='Youtube URL']")
+	private WebElement youtubeUrl; 
+	
 	
 	@FindBy(xpath="//input[@placeholder='Start date']")
 	private WebElement selectDateclk;
@@ -47,7 +51,7 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//input[@placeholder='Start Time']")
 	private WebElement selectStartTimeClk;
 	
-	@FindBy(xpath="//li[@class='ant-time-picker-panel-select-option-selected ng-star-inserted']")
+	@FindBy(xpath="//li[@class='ant-picker-time-panel-cell ng-star-inserted']")
 	private WebElement selectTime;
 	
 	@FindBy(xpath="//input[@placeholder='End Time']")
@@ -71,7 +75,7 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//div[@class='gs_text']")
 	private WebElement selectVenue;
 	
-	@FindBy(xpath="//button[text()='Save & Continue']")
+	@FindBy(xpath="//button[text()=' Save & Continue ']")
 	private WebElement saveContinueBtn;
 	
 	@FindBy(xpath="//p[text()='Tickets']/..")
@@ -173,14 +177,6 @@ public class CreateListingPage extends WebDriverUtility {
 	@FindBy(xpath="//h5[text()='Published']")
 	private WebElement publish;
 	
-
-	
-
-
-	
-
-
-
 
 	@FindBy(xpath="//button[text()=' Partners ']")
 	private WebElement partnersclk;
@@ -443,6 +439,10 @@ public class CreateListingPage extends WebDriverUtility {
 		return publish;
 	}
 
+	public WebElement getYoutubeUrl() {
+		return youtubeUrl;
+	}
+
 
 	
 	/**
@@ -471,7 +471,7 @@ public class CreateListingPage extends WebDriverUtility {
 		Thread.sleep(5000);
 			
 	}
-	
+		
 	
 
 	public void fillDiyForm(WebDriver driver, String city) throws Throwable
@@ -480,19 +480,24 @@ public class CreateListingPage extends WebDriverUtility {
 		eventTitleTextEdt.sendKeys("The Title of Event Night Club TEST");
 		categoryClk.click();
 		Thread.sleep(3000);
-		selectItemFromList(driver, "Poetry Events", listItems);
+		selectItemFromList(driver, "Festivals", listItems);
+		Thread.sleep(2000);
 		tagsclk.click();
 		Thread.sleep(3000);
-		selectItemFromList(driver, "Online Streaming", listItems);
+		selectItemFromList(driver, "Rain Dance", listItems);
 		escapeClickAction(driver);
 		uploadEventCover.sendKeys(IConstants.imageFilePath);
 		Thread.sleep(3000);
-		imgSaveBtn.click();
+		imgSaveBtn.click();	
 		Thread.sleep(3000);
+		scrollAction(driver, youtubeUrl);
+		Thread.sleep(1000);
 		selectMultipleDayEventClk.click();
 		dateAndTime(driver);
 		eventDescriptionEdt.sendKeys("This is the Event Description of the Check Point");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
+		scrollActionDown(driver);
+		Thread.sleep(2000);		
 		selectCityClk.click();
 		selectItemFromList(driver, city, listItems);
 		selectVenueClk.click();
@@ -502,16 +507,23 @@ public class CreateListingPage extends WebDriverUtility {
 		Thread.sleep(3000);
 		selectVenue.click();
 		Thread.sleep(3000);
+		scrollActionDown(driver);
+		Thread.sleep(1000);
 		saveContinueBtn.click();
+		Thread.sleep(2000);
+		scrollActionDown(driver);
 		
 	}
 	
 	public void createArtist(WebDriver driver, String ArtistName, String ArtistBio) throws Throwable
 	{
+		
 		waitForElementToBeVisible(driver, artistClk);
+//		scrollAction(driver, artistClk);
 		Thread.sleep(2000);
 		artistClk.click();
 		Thread.sleep(2000);
+		scrollActionDown(driver);	
 		searchArtist.sendKeys("Other");
 		Thread.sleep(2000);
 		selectItemFromList(driver, "Other", listOther);
@@ -526,6 +538,7 @@ public class CreateListingPage extends WebDriverUtility {
 		waitForElementToBeVisible(driver, succesmsg);
 		System.out.println(succesmsg.getText());
 		Thread.sleep(2000);
+		scrollActionDown(driver);
 
 		
 		

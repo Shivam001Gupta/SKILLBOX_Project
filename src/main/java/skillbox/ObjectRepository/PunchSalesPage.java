@@ -30,7 +30,7 @@ public class PunchSalesPage extends WebDriverUtility {
 	@FindBy(xpath="//nz-select[@formcontrolname='category']")
 	private WebElement categoryClk;
 	
-	@FindBy(xpath="//li[@unselectable='unselectable']")
+	@FindBy(xpath="//nz-option-item/div")
 	private List<WebElement>listItems;
 	
 	@FindBy(xpath="//input[@placeholder='Amount']")

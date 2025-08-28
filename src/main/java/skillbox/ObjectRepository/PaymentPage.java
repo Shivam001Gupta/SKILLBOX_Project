@@ -166,7 +166,7 @@ public class PaymentPage extends WebDriverUtility {
 		Thread.sleep(6000);
 		driver.switchTo().frame(0);       
 		rzpmobno.sendKeys(mob);
-		rzpproceed.click();
+//		rzpproceed.click();
 		Thread.sleep(3000);
 		phonepeClk.click();
 		Thread.sleep(2000);

@@ -12,7 +12,7 @@ class SignUpArtistTest extends BaseClass {
 		
 		//Creating Artist Profile
 		HomePage hp = new HomePage(driver);
-		hp.signUp(driver, "Ancort", "9811475955", "12345678");
+		hp.signUp(driver, "Ancort", "12345678");
 		hp.signUpArtist(driver);
 		System.out.println("Account creation successfully");
 		

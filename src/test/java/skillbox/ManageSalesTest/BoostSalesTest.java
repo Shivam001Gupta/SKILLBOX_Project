@@ -15,7 +15,7 @@ public class BoostSalesTest extends BaseClass {
 		//Login From User and Open Feeds
 		HomePage hp = new HomePage(driver);
 		
-		hp.loginUser(driver, "guptashivam1711@gmail.com", "123456789");
+		hp.loginUser(driver, "guptashivam1711@gmail.com", "12345678");
 		hp.selectmangesales(driver);
 				
 		//Get Event From Manage Sales

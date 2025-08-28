@@ -32,7 +32,7 @@ public class PaidEventBookTest extends BaseClass {
         
         //SignIn on Event Booking Page
         EventBookingPage ebp = new EventBookingPage(driver);
-        ebp.signupOnEventBook(driver, "MNPO", "9898801029", "12345678");
+        ebp.signupOnEventBook(driver, "MNPO", "9898801029", "231001");
       
         //Login on Event Booking Page              
         ebp.loginOnEventBook(driver,"shivam@skillboxes.com", "12345678");

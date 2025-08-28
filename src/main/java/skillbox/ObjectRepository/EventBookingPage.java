@@ -65,7 +65,7 @@ public class EventBookingPage extends WebDriverUtility {
 	@FindBy(xpath="(//div[@class='modal-body']/div/h2)[2]")
 	private WebElement freeTicketConfirmationMsg;
 	
-	@FindBy(xpath="(//div[@class='modal-body']/div/h2)[1]")
+	@FindBy(xpath="(//div[@class='modal-body']/div/h2)[2]")
 	private WebElement preTicketConfirmationMsg;
 	
 	@FindBy(xpath="//*[text()=' Confirm ']/..")
@@ -223,7 +223,7 @@ public class EventBookingPage extends WebDriverUtility {
 	}
 	
 	
-	public void signupOnEventBook(WebDriver driver, String name, String number, String password) throws Throwable
+	public void signupOnEventBook(WebDriver driver, String name, String number, String pincode) throws Throwable
 	{
 		
 		waitForElementToBeVisible(driver, emailOnEventBook);
@@ -235,7 +235,7 @@ public class EventBookingPage extends WebDriverUtility {
 		waitForElementToBeVisible(driver, nameOnEventBookEdt);
 		nameOnEventBookEdt.sendKeys(name);
 		mobileOnEventBookEdt.sendKeys(number);
-		createPasswordOnEventBookEdt.sendKeys(password);
+		pinCodeEdt.sendKeys(pincode);
 		eventBookCntbtn.click();
 		Thread.sleep(5000);
 		signOutFromEventBook.click();

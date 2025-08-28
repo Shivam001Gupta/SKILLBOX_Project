@@ -12,7 +12,7 @@ public class SignUpBusinessTest extends BaseClass {
 		
 		//Create Business Profile
 		HomePage hp = new HomePage(driver);
-		hp.signUp(driver, "Fn cort", "9811475955", "12345678");
+		hp.signUp(driver, "Fn cort", "12345678");
 		hp.signUpBusiness(driver);
 	    System.out.println("Account creation successfully");
 	    

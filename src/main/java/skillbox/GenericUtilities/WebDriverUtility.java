@@ -400,7 +400,9 @@ public class WebDriverUtility {
 		 for(WebElement i : elements)
 		    	
 		    {	    	
-		    	if(i.getText().contains(name))	   
+			 	
+		    	if(i.getText().contains(name))	 
+		    
 		    {
 		    		
 		    i.click();
@@ -429,8 +431,20 @@ public class WebDriverUtility {
 		return dst.getAbsolutePath(); //attach the screenshot to extent reports
 		
 	}
+	/**
+	 * This method is used to Zoom Out Screen
+	 * @param driver
+	 * @param Zooom Out
+	 * @return
+	 * @throws Throwable
+	 */
+		
+	public void zoomOut(WebDriver driver)
+	{
 
+	JavascriptExecutor executor = (JavascriptExecutor)driver;
+	executor.executeScript("document.body.style.zoom = '0.8'");
 
-
+	}
 
 }

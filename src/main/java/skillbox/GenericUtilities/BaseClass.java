@@ -34,8 +34,7 @@ public class BaseClass {
 	public WebDriver driver = null;
 	
 	protected String URL = "https://www.sbmailer.com/";
-//	protected String URL = "https://gcp.sbmailer.com/";
-//	protected String URL = "https://gcp.skillboxes.com/";
+//	protected String URL = "https://www.skillbox.com/";
 	
 	@BeforeSuite
 	public void bsConfig()
@@ -52,6 +51,8 @@ public class BaseClass {
 		
 		
 		
+		
+		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
 			
 			// Create preferences map
@@ -64,9 +65,9 @@ public class BaseClass {
 			ChromeOptions option = new ChromeOptions();
 			option.setExperimentalOption("prefs", prefs);
 			
-			option.addArguments("--headless");
+//			option.addArguments("--headless"); 
 //			option.setBinary("/Users/Apple/git/SKILLBOX_Project/src/main/resources/chromedriver");
-//			WebDriverManager.chromedriver().setup();
+//			WebDriv	erManager.chromedriver().setup();
 			driver = new ChromeDriver(option);
 			System.out.println(BROWSER + " === Browser launched ===");
 

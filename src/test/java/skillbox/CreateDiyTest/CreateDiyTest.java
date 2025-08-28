@@ -12,7 +12,7 @@ public class CreateDiyTest extends BaseClass {
 	{
 		//Login From User and Open Create Listing
 		HomePage hp = new HomePage(driver);
-		hp.loginUser(driver, "walker@gmail.com", "123456789");
+		hp.loginUser(driver, "walker@gmail.com", "12345678");
 		hp.clickOnCreateListingLnk(driver);
 		 
 		//Fill  DIY Form

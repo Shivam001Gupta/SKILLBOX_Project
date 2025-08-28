@@ -13,10 +13,10 @@ public class CampignPage extends WebDriverUtility {
 	@FindBy(xpath="//button[text()='Edit recipients']")
 	private WebElement editRecipientsclk;
 	
-	@FindBy(xpath="//div[text()='Select a audience']")
+	@FindBy(xpath="//nz-select[@nzplaceholder='Select a audience']")
 	private WebElement selectAudience;
 	
-	@FindBy(xpath="//span[text()='NewLIILK']")
+	@FindBy(xpath="//span[text()='dsadsad']")
 	private WebElement selectUser;
 	
 	@FindBy(xpath="//span[text()=' Save ']/..")
