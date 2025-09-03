@@ -1,6 +1,5 @@
 package skillbox.AlllPagesTest;
 import org.testng.annotations.Test;
-
 import skillbox.GenericUtilities.BaseClass;
 import skillbox.ObjectRepository.HomePage;
 
@@ -8,29 +7,29 @@ public class AllTest extends BaseClass
 
 
 {
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void creatediy() throws Throwable
 	{
 		//Login From User and Open Create Listing
 		HomePage hp = new HomePage(driver);
-		hp.loginUser(driver, "walker@gmail.com", "12345678");;
+		hp.loginUser(driver, "walker@gmail.com", "12345678");
 	
 
    
-        driver.get(URL+"feedbox");;
+        driver.get(URL+"feedbox");
         Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(5000);
         
         
 //        
-//        driver.get(URL+"wedding-packages");;
+//        driver.get(URL+"wedding-packages");
 //        Thread.sleep(5000);
 //        driver.navigate().refresh();
 //        Thread.sleep(5000);
 //
 //        
-//        driver.get(URL+"corporate-packages");;
+//        driver.get(URL+"corporate-packages");
 //        Thread.sleep(5000);
 //        driver.navigate().refresh();
 //        Thread.sleep(5000);

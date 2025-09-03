@@ -15,10 +15,10 @@ public class AddOnPage extends WebDriverUtility {
 	@FindBy(xpath="//input[@name='addOns']/..")
 	private WebElement addOnSelectCheck;
 	
-	@FindBy(xpath="//div[@class='mr-3 ng-star-inserted']/select")
+	@FindBy(xpath="(//select[contains(@class, 'form-control')])[1]")
 	private WebElement addOnCategory;
 	
-	@FindBy(xpath="//div[@class='ng-star-inserted']/select")
+	@FindBy(xpath="(//select[contains(@class, 'form-control')])[2]")
 	private WebElement addOnQuantity;
 	
 	@FindBy(xpath="//textarea[@placeholder='Enter your shipping address..']")
@@ -30,10 +30,10 @@ public class AddOnPage extends WebDriverUtility {
 	@FindBy(xpath="//nz-select[@nzplaceholder='City*']")
 	private WebElement cityClk;
 	
-	@FindBy(xpath="//nz-select[@nzplaceholder='City*']/div/div/div[2]/div/input")   // "//nz-select[@nzplaceholder='City*']"
+	@FindBy(xpath="//input[@autocomplete='off']")   // "//nz-select[@nzplaceholder='City*']"
 	private WebElement cityEdt;
 	
-	@FindBy(xpath="//li[@unselectable='unselectable']")
+	@FindBy(xpath="//nz-option-item")
 	private List<WebElement> listItems;
 	
 	@FindBy(xpath="//input[@placeholder='Pincode*']")

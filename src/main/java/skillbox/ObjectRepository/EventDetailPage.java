@@ -9,19 +9,14 @@ import skillbox.GenericUtilities.WebDriverUtility;
 
 public class EventDetailPage extends WebDriverUtility {
 	
-	@FindBy(xpath ="//a[@class='btn bg-white text-dark font-m mr-3 ng-star-inserted']")
+	@FindBy(xpath ="//a[@class='btn bg-white text-dark font-m me-3']")
 	private WebElement bookBtnLnk;	
 	
-	@FindBy(xpath ="//button[@class='btn bg-white text-dark font-m mr-4 ng-star-inserted']")
+	@FindBy(xpath ="//button[@class='btn bg-white text-dark font-m me-4']")
 	private WebElement bookBtnSeat;
-	
-	
-	
-	
-	
-	
-	
-	public EventDetailPage(WebDriver driver)
+
+
+    public EventDetailPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -33,7 +28,6 @@ public class EventDetailPage extends WebDriverUtility {
 	public WebElement getBookBtnSeat() {
 		return bookBtnSeat;
 	}
-	
 	
 	public void clickbooknowbtn(WebDriver driver) throws InterruptedException
 	{
@@ -48,6 +42,9 @@ public class EventDetailPage extends WebDriverUtility {
 		bookBtnSeat.click();
 		Thread.sleep(5000);
 	}
+
+
+
 
 	
 	

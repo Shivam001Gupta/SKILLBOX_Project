@@ -12,7 +12,7 @@ import skillbox.GenericUtilities.WebDriverUtility;
 public class SeatSectionPage extends WebDriverUtility {
 	
 	
-	@FindBy(xpath="//div[text()='Filter sections by price']")
+	@FindBy(xpath="//nz-select-top-control[@cdkoverlayorigin='']")
 	private WebElement pricedropclk;
 	
 	@FindBy(xpath="//div[@class='price-text ng-star-inserted']")

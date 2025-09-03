@@ -21,25 +21,25 @@ public class HomePage extends WebDriverUtility {
 	
 	@FindBy(xpath="//button[text()='Login/Sign Up']")
 	private WebElement loginSignUpBtn;
-	
+
 	@FindBy(linkText="Sign up")
 	private WebElement signUpLnk;
 	
-	@FindBy(xpath="(//div[@class='ac_type_inner'])[1]")
+	@FindBy(xpath="//input[@value='A']")
 	private WebElement artistType;
 	
-	@FindBy(xpath="(//div[@class='ac_type_inner'])[2]")
+	@FindBy(xpath="//input[@value='F']")
 	private WebElement fanType;
 	
-	@FindBy(xpath="(//div[@class='ac_type_inner'])[3]")
+	@FindBy(xpath="//input[@value='B']")
 	private WebElement BusinessType;
 	
 	@FindBy (xpath="//button[.='Sign up']")
 	private WebElement signUpBtn;
 
-	@FindBy(xpath="//button[text()='Continue with email/mobile']")
+	@FindBy(xpath="//button[text()='Continue with email or mobile']")
 	private WebElement continuteWithEmailBtn;
-	
+	        
 	@FindBy(xpath="//small[text()='Login via Password ']")
 	private WebElement loginViaPassword;
 	

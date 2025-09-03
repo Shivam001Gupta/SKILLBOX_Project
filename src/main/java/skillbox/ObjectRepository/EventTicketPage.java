@@ -1,10 +1,8 @@
 package skillbox.ObjectRepository;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import skillbox.GenericUtilities.WebDriverUtility;
 
 public class EventTicketPage extends WebDriverUtility {
@@ -12,10 +10,10 @@ public class EventTicketPage extends WebDriverUtility {
 	
 	
 
-	@FindBy(xpath="//div[@class='list-group']/a")
+	@FindBy(xpath="//h6[@class='text-dark a-txt ng-tns-c3242471393-1']")
 	private WebElement passSelect;
 	
-	@FindBy(xpath="//div[@class='qty qty_active']/select")
+	@FindBy(xpath="//select[contains(@class, 'form-control')]")
 	private WebElement ticketQty;
 	
 	@FindBy(xpath="//input[@placeholder='Enter amount']")
@@ -70,7 +68,7 @@ public class EventTicketPage extends WebDriverUtility {
 	public void selectTicket(String text) throws Throwable
 	{
 		passSelect.click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		handleDropDown(text, ticketQty);
 		artistDonation.sendKeys("300");
 		ticketCheckout.click();

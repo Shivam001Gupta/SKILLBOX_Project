@@ -23,7 +23,7 @@ public class SupersonicEventWidget extends BaseClass {
 	      
 	      //Select Add-On and Submit  
 	      AddOnPage ap = new AddOnPage(driver);
-	      ap.addOnDataSupersonic(driver, "Allahabad", "231001", "Mirzapur");
+	      ap.addOnDataSupersonic(driver, "Prayagraj", "231001", "Mirzapur");
 	      
           //Login on Event Booking Page
           EventBookingPage ebp = new EventBookingPage(driver);

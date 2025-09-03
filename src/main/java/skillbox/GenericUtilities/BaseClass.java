@@ -38,6 +38,7 @@ public class BaseClass {
 	
 	@BeforeSuite
 	public void bsConfig()
+
 	{
 		System.out.println("====== db connection successful ======");
 	}
@@ -125,7 +126,7 @@ public class BaseClass {
 	public void acConfig()
 	{
 		if (driver != null)
-		driver.quit();
+            driver.quit();
 		System.out.println(" ========== Browser Closed ========");
 	}
 		

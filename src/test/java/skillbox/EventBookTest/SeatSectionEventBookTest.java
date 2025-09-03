@@ -12,7 +12,7 @@ import skillbox.ObjectRepository.SeatSectionPage;
 public class SeatSectionEventBookTest extends BaseClass {
 	
 	@Test
-	  public void addoneventbook() throws Throwable
+	  public void seatsectionbook() throws Throwable
 	  {
 		  //Open Free Event By URL
 		  driver.get(URL+"events/the-event-seat-section-delhi");

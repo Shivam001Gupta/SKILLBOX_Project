@@ -9,7 +9,7 @@ import skillbox.ObjectRepository.EventTicketPage;
 public class PreRegistrationEventBookTest extends BaseClass {
 	
 	@Test
-	  public void freeticketbook() throws Throwable
+	  public void preregistrationbook() throws Throwable
 	  {
 		  //Open Free Event By URL
 		  driver.get(URL+"events/the-pre-registration-event-kt");

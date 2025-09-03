@@ -9,9 +9,9 @@ import skillbox.GenericUtilities.WebDriverUtility;
 
 public class EventBookingPage extends WebDriverUtility {
 	
-	
 
-	@FindBy(xpath="//input[@placeholder='Email address']")
+
+	@FindBy(xpath="//input[@placeholder='Email or mobile number']")
 	private WebElement emailOnEventBook;
 	
 	@FindBy(xpath="//span[text()='Continue']")
@@ -29,13 +29,13 @@ public class EventBookingPage extends WebDriverUtility {
 	@FindBy(linkText="Sign out")
 	private WebElement signOutFromEventBook;
 	
-	@FindBy(xpath="//input[@placeholder='Your Name']")
+	@FindBy(xpath="//input[@placeholder='Your Name*']")
 	private WebElement nameOnEventBookEdt;
 	
-	@FindBy(xpath="//input[@placeholder='Mobile']")
+	@FindBy(xpath="//input[@placeholder='Mobile*']")
 	private WebElement mobileOnEventBookEdt;
 		
-	@FindBy(xpath="//a[@data-target='#couponModal']")
+	@FindBy(xpath="//a[@data-bs-target='#couponModal']")
 	private WebElement couponDiscount;	
 	
 	@FindBy(xpath="//input[@placeholder='Have a Promo Code?']")
@@ -50,7 +50,7 @@ public class EventBookingPage extends WebDriverUtility {
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement confirmPay;
 	
-	@FindBy(xpath="//a[@data-target='#couponModal']")
+	@FindBy(xpath="//a[@data-bs-target='#couponModal']")
 	private WebElement couponPopUPClk;
 	
 	@FindBy(xpath="//input[@placeholder='Have a Promo Code?']")
@@ -65,13 +65,13 @@ public class EventBookingPage extends WebDriverUtility {
 	@FindBy(xpath="(//div[@class='modal-body']/div/h2)[2]")
 	private WebElement freeTicketConfirmationMsg;
 	
-	@FindBy(xpath="(//div[@class='modal-body']/div/h2)[2]")
+	@FindBy(xpath="(//div[@class='modal-body']/div/h2)")
 	private WebElement preTicketConfirmationMsg;
 	
 	@FindBy(xpath="//*[text()=' Confirm ']/..")
 	private WebElement acceptCovidguidelines;
 	
-	@FindBy(xpath="//p[@data-target='#formQuestionModal']")
+	@FindBy(xpath="//p[@data-bs-target='#formQuestionModal']")
 	private WebElement addGuestBtn;
 	
 	@FindBy(xpath="(//input[@placeholder='Your Name'])[2]")
@@ -83,7 +83,7 @@ public class EventBookingPage extends WebDriverUtility {
 	@FindBy(xpath="//span[text()='Male']")
 	private WebElement genderRadioGuest;
 	
-	@FindBy(xpath="//span[text()='Burger']")
+	@FindBy(xpath="(//input[@type='checkbox'])[1]")
 	private WebElement checkBoxGuest;
 	
 	@FindBy(xpath="//button[text()='Save ']")
@@ -228,13 +228,13 @@ public class EventBookingPage extends WebDriverUtility {
 		
 		waitForElementToBeVisible(driver, emailOnEventBook);
 		Thread.sleep(2000);
-		String c = RandomStringUtils.randomAlphabetic(7);
+        String c = RandomStringUtils.randomNumeric(10);
         System.out.println(c);
 		emailOnEventBook.sendKeys(c+"@gmail.com");
 		eventBookCntbtn.click();
 		waitForElementToBeVisible(driver, nameOnEventBookEdt);
 		nameOnEventBookEdt.sendKeys(name);
-		mobileOnEventBookEdt.sendKeys(number);
+		mobileOnEventBookEdt.sendKeys(c);
 		pinCodeEdt.sendKeys(pincode);
 		eventBookCntbtn.click();
 		Thread.sleep(5000);

@@ -13,7 +13,7 @@ public class AddGuestEventBookTest extends BaseClass {
 	  public void addoneventbook() throws Throwable
 	  {
 		  //Open Free Event By URL
-		  driver.get("https://www.sbmailer.com/events/add-guest-event-kt");
+		  driver.get(URL+"events/add-guest-event-kt");
 		  
 		  //Click on the Book Now Button
 		  EventDetailPage edp = new EventDetailPage(driver);
